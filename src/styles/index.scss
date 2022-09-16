@@ -1,9 +1,31 @@
 @use 'reset';
 @use 'vars';
 
+
 body {
-  font-family: sans-serif;
+	height:100vh;}
+	
+	
+
+.app{
+	height:100%;
+
 }
+
+.home{
+	height:100%
+}
+
+#root{
+	height:100%;
+	width:80%;
+	background: rgb(21,22,27);
+	background: linear-gradient(174deg, rgba(21,22,27,1) 0%, rgba(247,247,247,1) 62%, rgba(254,243,211,1) 100%);
+	margin:auto;
+	border-right:1px black solid;
+	border-left:1px black solid;
+}
+
 
 /* 
   // or you can import your own font
