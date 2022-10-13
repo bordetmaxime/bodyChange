@@ -1,15 +1,15 @@
 import './styles.scss';
 import Header from '../Header';
-import Smith1 from '../../assets/smith/squat-smith.gif';
-import Smith2 from '../../assets/smith/dev-couche-smith.gif';
-import Smith3 from '../../assets/smith/dev-epaule-smith.gif';
-import Smith4 from '../../assets/smith/dev-nuque-smith.gif';
-import Smith5 from '../../assets/smith/drag-curl-smith.gif';
-import Smith6 from '../../assets/smith/ext-mollets-deb-smith.gif';
-import Smith7 from '../../assets/smith/ext-mollets-smith.gif';
-import Smith8 from '../../assets/smith/heg-press-smith.gif';
-import Smith9 from '../../assets/smith/hip-trust-smith.gif';
-import Smith10 from '../../assets/smith/tirage-smith.gif';
+import squat1 from '../../assets/squat1.gif';
+import squat2 from '../../assets/squat2.gif';
+import squat3 from '../../assets/squat3.gif';
+import squat4 from '../../assets/squat4.gif';
+import squat5 from '../../assets/squat5.gif';
+import squat6 from '../../assets/squat6.gif';
+import squat7 from '../../assets/squat7.gif';
+import squat8 from '../../assets/squat8.gif';
+import squat9 from '../../assets/squat9.gif';
+import squat10 from '../../assets/squat10.gif';
 import { Link } from 'react-router-dom';
 
 
@@ -17,7 +17,8 @@ import { Link } from 'react-router-dom';
 const Squat = ({repSquat1, repSquat2, repSquat3, repSquat4, repSquat5, repSquat6, repSquat7, repSquat8, repSquat9, repSquat10,
 	serSquat1, serSquat2, serSquat3, serSquat4, serSquat5, serSquat6, serSquat7, serSquat8, serSquat9, serSquat10,
 setRepSquat1, setRepSquat2, setRepSquat3, setRepSquat4, setRepSquat5, setRepSquat6, setRepSquat7,setRepSquat8, setRepSquat9, setRepSquat10,
-setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSquat6, setSerSquat7, setSerSquat8, setSerSquat9, setSerSquat10, }) => {
+setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSquat6, setSerSquat7, setSerSquat8, setSerSquat9, setSerSquat10, trainingSubmit, 
+connection, setConnection}) => {
 
 		const inputValue = (event) => {
 
@@ -102,12 +103,16 @@ setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSqua
 	
 	return (
 	<div className="Squat">
-			<Header/>
+			<Header connection={connection}
+			setConnection={setConnection}/>
 
-			<div class="d-flex justify-content-around flex-wrap">
+			<div class="container-fluid">
 
-			<div className="card w-25 m-2"  >
-  <img src={Smith1}  className="card-img-top" alt="..."/>
+			<form onSubmit={trainingSubmit}>
+
+<div className="row">
+			<div className="card m-2 col-md"  >
+  <img src={squat1}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="card1serie">nombre de série:</label>
@@ -119,8 +124,8 @@ setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSqua
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Smith2}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={squat2}  className="card-img-top" alt="..."/>
   <div className="card-body">
  
 
@@ -134,8 +139,8 @@ setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSqua
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Smith3}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={squat3}  className="card-img-top" alt="..."/>
   <div className="card-body">
   
  
@@ -148,8 +153,8 @@ setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSqua
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Smith4}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={squat4}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 
@@ -161,9 +166,12 @@ setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSqua
 
   </div>
 </div>
+</div>
 
-<div className="card w-25 m-2"  >
-  <img src={Smith5}  className="card-img-top" alt="..."/>
+<div className="row">
+
+<div className="card m-2 col-md"  >
+  <img src={squat5}  className="card-img-top" alt="..."/>
   <div className="card-body">
  
  
@@ -176,8 +184,8 @@ setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSqua
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Smith6}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={squat6}  className="card-img-top" alt="..."/>
   <div className="card-body">
   
   <label for="card6serie">nombre de série:</label>
@@ -189,8 +197,8 @@ setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSqua
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Smith7}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={squat7}  className="card-img-top" alt="..."/>
   <div className="card-body">
  
 
@@ -202,8 +210,8 @@ setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSqua
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Smith8}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={squat8}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 
@@ -217,8 +225,11 @@ setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSqua
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Smith9}  className="card-img-top" alt="..."/>
+</div>
+
+ <div className="row">
+<div className="card m-2 col-md-3"  >
+  <img src={squat9}  className="card-img-top" alt="..."/>
   <div className="card-body">
   
 
@@ -231,8 +242,8 @@ setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSqua
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Smith10}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md-3"  >
+  <img src={squat10}  className="card-img-top" alt="..."/>
   <div className="card-body">
   
   <label for="card10serie">nombre de série:</label>
@@ -240,19 +251,23 @@ setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSqua
   <label for="card10rep">nombre de répétion:</label>
   <input type="number" id="card10rep" value={repSquat10} name='repSquat10' className="w-75 m-auto" onChange={ inputValue }/>
 
-
+</div>
   </div>
 </div>
 
-</div>
 <div className="d-flex justify-content-center m-5">
-<button><Link to="/training">Voir mon entrainement</Link></button>
-<button><Link to="/machine">choisir d'autres éxercices</Link></button>
+
+<button type="submit" class="btn btn-primary btn-lg m-2">Enregistrer l'entrainement</button>
+<button type="button" class="btn btn-secondary btn-lg m-2"><Link to="/machine">Choisir d'autres éxercices</Link></button>
+
+</div>
+
+</form>
 
 </div>
 
 
-	</div>
+</div>
 
 	
 );

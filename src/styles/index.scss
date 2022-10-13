@@ -2,28 +2,24 @@
 @use 'vars';
 
 
-body {
-	height:100vh;}
+
+
 	
-	
 
-.app{
+
+body{
 	height:100%;
-
-}
-
-.home{
-	height:100%
-}
-
-#root{
-	height:100%;
-	width:80%;
-	background: rgb(21,22,27);
-	background: linear-gradient(174deg, rgba(21,22,27,1) 0%, rgba(247,247,247,1) 62%, rgba(254,243,211,1) 100%);
+	background: rgb(145,141,143);
+	background: linear-gradient(90deg, rgba(145,141,143,1) 0%, rgba(148,187,233,1) 100%);
 	margin:auto;
 	border-right:1px black solid;
 	border-left:1px black solid;
+}
+
+.card{
+
+	border-radius: 20px;
+	border: 2px solid black
 }
 
 

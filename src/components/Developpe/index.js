@@ -1,40 +1,40 @@
 import Header from '../Header';
 import { Link } from 'react-router-dom';
 
-import banc1 from '../../assets/banc/banc1.gif';
-import banc2 from '../../assets/banc/banc2.gif';
-import banc3 from '../../assets/banc/banc3.gif';
-import banc4 from '../../assets/banc/banc4.gif';
-import banc5 from '../../assets/banc/banc5.gif';
-import banc6 from '../../assets/banc/banc6.gif';
-import banc7 from '../../assets/banc/banc7.gif';
-import banc8 from '../../assets/banc/banc8.gif';
-import banc9 from '../../assets/banc/banc9.gif';
-import banc10 from '../../assets/banc/banc10.gif';
-import banc11 from '../../assets/banc/banc11.gif';
-import banc12 from '../../assets/banc/banc12.gif';
-import banc13 from '../../assets/banc/banc13.gif';
-import banc14 from '../../assets/banc/banc14.gif';
-import banc15 from '../../assets/banc/banc15.gif';
-import banc16 from '../../assets/banc/banc16.gif';
-import banc17 from '../../assets/banc/banc17.gif';
-import banc18 from '../../assets/banc/banc18.gif';
-import banc19 from '../../assets/banc/banc19.gif';
-import banc20 from '../../assets/banc/banc20.gif';
-import banc21 from '../../assets/banc/banc21.gif';
-import banc22 from '../../assets/banc/banc22.gif';
-import banc23 from '../../assets/banc/banc23.gif';
-import banc24 from '../../assets/banc/banc24.gif';
-import banc25 from '../../assets/banc/banc25.gif';
+import dev1 from '../../assets/dev1.gif';
+import dev2 from '../../assets/dev2.gif';
+import dev3 from '../../assets/dev3.gif';
+import dev4 from '../../assets/dev4.gif';
+import dev5 from '../../assets/dev5.gif';
+import dev6 from '../../assets/dev6.gif';
+import dev7 from '../../assets/dev7.gif';
+import dev8 from '../../assets/dev8.gif';
+import dev9 from '../../assets/dev9.gif';
+import dev10 from '../../assets/dev10.gif';
+import dev11 from '../../assets/dev11.gif';
+import dev12 from '../../assets/dev12.gif';
+import dev13 from '../../assets/dev13.gif';
+import dev14 from '../../assets/dev14.gif';
+import dev15 from '../../assets/dev15.gif';
+import dev16 from '../../assets/dev16.gif';
+import dev17 from '../../assets/dev17.gif';
+import dev18 from '../../assets/dev18.gif';
+import dev19 from '../../assets/dev19.gif';
+import dev20 from '../../assets/dev20.gif';
+import dev21 from '../../assets/dev21.gif';
+import dev22 from '../../assets/dev22.gif';
+import dev23 from '../../assets/dev23.gif';
+import dev24 from '../../assets/dev24.gif';
+
 
 const Developpe = ({
 repDev1, repDev2,repDev3, repDev4,repDev5, repDev6, repDev7, repDev8, repDev9, repDev10, repDev11, repDev12, repDev13, repDev14, repDev15, repDev16,
-repDev17, repDev18, repDev19, repDev20, repDev21, repDev22, repDev23, repDev24, repDev25, setRepDev1, setRepDev2, setRepDev3, setRepDev4, setRepDev5,
+repDev17, repDev18, repDev19, repDev20, repDev21, repDev22, repDev23, repDev24, setRepDev1, setRepDev2, setRepDev3, setRepDev4, setRepDev5,
 setRepDev6, setRepDev7, setRepDev8, setRepDev9, setRepDev10, setRepDev12, setRepDev13, setRepDev14, setRepDev16, setRepDev17, setRepDev18, setRepDev19,
-setRepDev20, setRepDev21, setRepDev22, setRepDev23, setRepDev24, setRepDev25, serDev1, serDev2, serDev3, serDev4, serDev5, serDev6, serDev7, serDev8, serDev9, 
+setRepDev20, setRepDev21, setRepDev22, setRepDev23, setRepDev24, serDev1, serDev2, serDev3, serDev4, serDev5, serDev6, serDev7, serDev8, serDev9, 
 serDev10, serDev11, serDev12, serDev13, serDev14, serDev15, serDev16, serDev17, serDev18, serDev19, serDev20, serDev21, serDev22, serDev23, serDev24,
-serDev25, setSerDev1, setSerDev2, setSerDev3, setSerDev4, setSerDev5, setSerDev6, setSerDev7, setSerDev8, setSerDev9, setSerDev10, setSerDev11, setSerDev12,
-setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, setSerDev21, setSerDev22, setSerDev23, setSerDev24, setSerDev25
+setSerDev1, setSerDev2, setSerDev3, setSerDev4, setSerDev5, setSerDev6, setSerDev7, setSerDev8, setSerDev9, setSerDev10, setSerDev11, setSerDev12,
+setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, setSerDev21, setSerDev22, setSerDev23, setSerDev24, trainingSubmit, connection, setConnection
 }) => {
 
 
@@ -118,10 +118,7 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 			  case 'repDev24':
 				setRepDev24(value)
 			  break;
-			  case 'repDev25':
-				setRepDev25(value)
-			  break;
-		      case 'serDev1':
+			  case 'serDev1':
 				setSerDev1(value)
 				break;
 			case 'serDev2':
@@ -193,9 +190,7 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 			case 'serDev24':
 				setSerDev24(value)
 				break;
-			case 'serDev25':
-				setSerDev25(value)
-				break;
+		
 								default:
 			  console.log('404');
 		  }
@@ -205,12 +200,17 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 	return(
 
 	<div className='developpe'>
-<Header/>
+<Header connection={connection}
+setConnection={setConnection}/>
 
-<div class="d-flex justify-content-around flex-wrap">
+<div class="container-fluid">
 
-			<div className="card w-25 m-2"  >
-  <img src={banc1}  className="card-img-top" alt="..."/>
+<form onSubmit={trainingSubmit}>
+
+	<div className="row">
+
+			<div className="card m-2 col-md"  >
+  <img src={dev1}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev1">nombre de série:</label>
@@ -222,8 +222,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc2}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev2}  className="card-img-top" alt="..."/>
   <div className="card-body">
 <label for="cardserDev2">nombre de série:</label>
   <input type="number" id="cardserDev2" value={serDev2} name="serDev2" className="w-75 m-auto" onChange={ inputValue }/>
@@ -234,8 +234,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc3}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev3}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev3">nombre de série:</label>
@@ -247,8 +247,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc4}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev4}  className="card-img-top" alt="..."/>
   <div className="card-body">
  
 	<label for="cardserDev4">nombre de série:</label>
@@ -259,9 +259,12 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
   </div>
 </div>
 
+</div>
 
-<div className="card w-25 m-2"  >
-  <img src={banc5}  className="card-img-top" alt="..."/>
+<div className="row">
+
+<div className="card m-2 col-md"  >
+  <img src={dev5}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev5">nombre de série:</label>
@@ -273,8 +276,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
   </div>
 
 
-  <div className="card w-25 m-2"  >
-  <img src={banc6}  className="card-img-top" alt="..."/>
+  <div className="card m-2 col-md"  >
+  <img src={dev6}  className="card-img-top" alt="..."/>
   <div className="card-body">
  
 	<label for="cardserDev6">nombre de série:</label>
@@ -286,8 +289,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc7}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev7}  className="card-img-top" alt="..."/>
   <div className="card-body">
   
 	<label for="cardserDev7">nombre de série:</label>
@@ -299,8 +302,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc8}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev8}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev8">nombre de série:</label>
@@ -311,9 +314,13 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
   </div>
 </div>
 
+</div>
 
-<div className="card w-25 m-2"  >
-  <img src={banc9}  className="card-img-top" alt="..."/>
+<div className="row">
+
+
+<div className="card m-2 col-md"  >
+  <img src={dev9}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev9">nombre de série:</label>
@@ -325,8 +332,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc10}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev10}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev10">nombre de série:</label>
@@ -338,8 +345,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc11}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev11}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev11">nombre de série:</label>
@@ -351,8 +358,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc12}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev12}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev12">nombre de série:</label>
@@ -364,8 +371,13 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc13}  className="card-img-top" alt="..."/>
+</div>
+
+<div className="row">
+
+
+<div className="card m-2 col-md"  >
+  <img src={dev13}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev13">nombre de série:</label>
@@ -377,8 +389,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc14}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev14}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev14">nombre de série:</label>
@@ -390,8 +402,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc15}  className="card-img-top" alt="..." />
+<div className="card m-2 col-md"  >
+  <img src={dev15}  className="card-img-top" alt="..." />
   <div className="card-body">
   
 	<label for="cardserDev15">nombre de série:</label>
@@ -403,8 +415,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc16}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev16}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev16">nombre de série:</label>
@@ -415,9 +427,13 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
   </div>
 </div>
 
+</div>
 
-<div className="card w-25 m-2"  >
-  <img src={banc17}  className="card-img-top" alt="..."/>
+<div className="row">
+
+
+<div className="card m-2 col-md"  >
+  <img src={dev17}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev17">nombre de série:</label>
@@ -429,8 +445,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc18}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev18}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev18">nombre de série:</label>
@@ -442,8 +458,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc19}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev19}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev19">nombre de série:</label>
@@ -455,8 +471,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc20}  className="card-img-top" alt="..." />
+<div className="card m-2 col-md"  >
+  <img src={dev20}  className="card-img-top" alt="..." />
   <div className="card-body">
   
 	<label for="cardserDev20">nombre de série:</label>
@@ -467,9 +483,12 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
   </div>
 </div>
 
+</div>
 
-<div className="card w-25 m-2"  >
-  <img src={banc21}  className="card-img-top" alt="..."/>
+<div className="row">
+
+<div className="card m-2 col-md"  >
+  <img src={dev21}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev21">nombre de série:</label>
@@ -481,8 +500,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc22}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev22}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev22">nombre de série:</label>
@@ -494,8 +513,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc23}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev23}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserDev23">nombre de série:</label>
@@ -507,8 +526,8 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={banc24}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={dev24}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 
@@ -520,28 +539,18 @@ setSerDev13, setSerDev14, setSerDev16, setSerDev17, setSerDev18, setSerDev19, se
   </div>
 </div>
 
-
-<div className="card w-25 m-2"  >
-  <img src={banc25}  className="card-img-top" alt="..."/>
-  <div className="card-body">
-
-	<label for="cardserDev25">nombre de série:</label>
-  <input type="number" id="cardserDev25"  value={serDev25} name="serDev25" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev2">nombre de répétion:</label>
-    <input type="number" id="cardrepDev2"  value={repDev25} name="repDev25" className="w-75 m-auto" onChange={ inputValue }/>
-
-  </div>
-</div>
 </div>
 
 <div className="d-flex justify-content-center m-5">
-<button><Link to="/training">Voir mon entrainement</Link></button>
-<button><Link to="/machine">choisir d'autres éxercices</Link></button>
 
-
+<button type="submit" class="btn btn-primary btn-lg m-2">Enregistrer l'entrainement</button>
+<button type="button" class="btn btn-secondary btn-lg m-2"><Link to="/machine">Choisir d'autres éxercices</Link></button>
 
 </div>
 
+</form>
+
+	</div>
 	</div>
 	)
 

@@ -1,3 +1,30 @@
-#carouselExampleDark{
-	height: 50vh
+.btn_home{
+	margin: 0 auto;
+	padding: 10px 25px 10px 25px;
+	border-radius:10px;
+border: 2px solid rgb(4, 134, 209);
+	background-color:  white;
+	font-family: sans-serif;
+text-transform: uppercase;
+
+
 }
+
+.div_btn_home{
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+
+}
+
+.home-container{
+	background-color:lightgray;
+	padding: 25px;
+	border-radius:30px;
+width:50%;
+border: 2px solid rgb(4, 134, 209)
+ }
+
+
+
+

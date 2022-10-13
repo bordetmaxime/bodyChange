@@ -1,6 +1,8 @@
 // == Import
 import { Route, Routes } from 'react-router';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import './styles.css';
 
 import Home from '../Home';
@@ -11,6 +13,11 @@ import Developpe from '../Developpe';
 import Haltere from '../Haltere';
 import Guide from '../Guide';
 import Training from '../Training';
+import Registration from '../Registration';
+import Connection from '../Connection';
+import Menu from '../Menu';
+import NotFound from '../NotFound';
+
 
 
 
@@ -18,10 +25,25 @@ import Training from '../Training';
 // == Composant
 const App = () => {
 
+	const navigate = useNavigate();
+
+
+
+	const [firstname, setfirstname] = useState('')
+	const [lastname, setlastname] = useState('')
+	const [password, setpassword] = useState('')
+	const [email, setemail] = useState('')
+	const [connection, setConnection] = useState(false)
+	const [adminid, setadminid] = useState()
+	const [fullTraining, setfullTraining] = useState('')
+	const [deleteTraining, setDeleteTraining] = useState()
+	
+
 	const [ squat, setSquat] = useState(false);
 	const [ developpe, setDeveloppe] = useState(false);
 	const [ guide, setGuide] = useState(false);
 	const [ haltere, setHaltere] = useState(false);
+
 
 	const [repSquat1, setRepSquat1] = useState();
 	const [repSquat2, setRepSquat2] = useState();
@@ -70,7 +92,7 @@ const App = () => {
 	const [repDev22, setRepDev22] = useState();
 	const [repDev23, setRepDev23] = useState();
 	const [repDev24, setRepDev24] = useState();
-	const [repDev25, setRepDev25] = useState();
+
 
 	const [serDev1, setSerDev1] = useState()
 	const [serDev2, setSerDev2] = useState()
@@ -96,7 +118,7 @@ const App = () => {
 	const [serDev22, setSerDev22] = useState()
 	const [serDev23, setSerDev23] = useState()
 	const [serDev24, setSerDev24] = useState()
-	const [serDev25, setSerDev25] = useState()
+
 
 	const [repHaltere1, setRepHaltere1] = useState();
 	const [repHaltere2, setRepHaltere2] = useState();
@@ -171,8 +193,137 @@ const [serGuide18, setSerGuide18] = useState()
 const [serGuide20, setSerGuide20] = useState()
 const [serGuide21, setSerGuide21] = useState()
 
+// fonction formulaire
+
+const trainingSubmit = (event) => {
+	event.preventDefault()
+trainingPost()
+	};
+
+const inscriptionSubmit = (event) => {
+event.preventDefault()
+register()	
+};
+
+const connectionSubmit = (event) => {
+	event.preventDefault();
+	login();
+};
+
+// req axios
+
+const register = async () => {
+	await axios.post('http://localhost:5100/admin', {
+		firstname,
+		lastname,		
+		email,
+		password,
+
+	}).then(response => {
+		navigate('/connection');
+	})
+.catch(error => {
+
+});
+};
+useEffect(() => {
+getTraining()
+  });
 
 
+const getTraining = async () => {
+await axios.get(`http://localhost:5100/training/${adminid}`).then(response => {
+setfullTraining(response.data)
+		
+	})
+	// Cas d'erreur
+		.catch(error => {
+			console.error(error);
+			
+		});
+  
+};
+
+const deleteOneTraining = async () => {
+	await axios.delete(`http://localhost:5100/training/${deleteTraining}`)
+	.then(response => {
+     navigate(`/training/${adminid}`)
+	})
+	// Cas d'erreur
+		.catch(error => {
+			console.error(error);
+			
+		});
+  
+};
+
+
+
+
+
+const login = async () => {
+	await axios.post('http://localhost:5100/admin/user', {
+		email,
+		password,
+
+	}).then(response => {
+			
+		setConnection(true);
+		setpassword('');
+		setadminid(response.data.admin_id)
+	    getTraining()
+		navigate('/menu')
+		
+	})
+	// Cas d'erreur
+		.catch(error => {
+			console.error(error);
+			
+		});
+  
+};
+
+
+const trainingPost = async () => {
+	await axios.post('http://localhost:5100/training', {
+	adminid,
+
+	repDev1, repDev2,repDev3, repDev4,repDev5, repDev6, repDev7, repDev8, repDev9, repDev10, repDev11, repDev12, repDev13, repDev14, repDev15, repDev16,
+    repDev17, repDev18, repDev19, repDev20, repDev21, repDev22, repDev23, repDev24,
+
+	serDev1, serDev2, serDev3, serDev4, serDev5, serDev6, serDev7, serDev8, serDev9, serDev10, serDev11, serDev12, serDev13, serDev14, serDev15, serDev16,
+	serDev17, serDev18, serDev19, serDev20, serDev21, serDev22, serDev23, serDev24,
+
+	repGuide1, repGuide2,repGuide3, repGuide4,repGuide5, repGuide6, repGuide7, repGuide8, repGuide9, repGuide10, repGuide11, repGuide12, repGuide13, repGuide14,
+	repGuide15, repGuide16, repGuide17, repGuide18, repGuide20, repGuide21,
+
+	serGuide1, serGuide2, serGuide3, serGuide4, serGuide5, serGuide6, serGuide7, serGuide8, serGuide9, 
+	serGuide10, serGuide11, serGuide12, serGuide13, serGuide14, serGuide15, serGuide16, serGuide17, serGuide18, serGuide20, serGuide21,
+
+	repHaltere1, repHaltere2,repHaltere3, repHaltere4,repHaltere5, repHaltere6, repHaltere7, repHaltere8, repHaltere9, repHaltere10, repHaltere11, repHaltere12,
+	repHaltere13, repHaltere14,
+
+	serHaltere1, serHaltere2, serHaltere3, serHaltere4, serHaltere5, serHaltere6, serHaltere7, serHaltere8, serHaltere9, serHaltere10, serHaltere11, serHaltere12, serHaltere13, serHaltere14,
+
+	repSquat1, repSquat2, repSquat3, repSquat4, repSquat5, repSquat6, repSquat7, repSquat8, repSquat9, repSquat10,
+
+	serSquat1, serSquat2, serSquat3, serSquat4, serSquat5, serSquat6, serSquat7, serSquat8, serSquat9, serSquat10,
+
+	}).then(response => {
+			
+		setConnection(true);
+		setpassword('');
+		navigate(`/training/${adminid}`);
+
+		
+	})
+	// Cas d'erreur
+		.catch(error => {
+			console.error(error);
+			
+		});
+  
+};
 
 	const changeState = (event) =>{
 		const machine = event.target.value;
@@ -193,23 +344,44 @@ const [serGuide21, setSerGuide21] = useState()
 		default:
 			console.log("404")
 		}
-	}
+	};
+
+	
 
 	return (
 		<div className="app">
+{
+
+	connection ? 
+
+
+
+
 			 <Routes>
 
-			 <Route path="/" element={ <Home /> } />
-
 			 <Route path="/start" element={
+
 		       <Start 
 				changeState={changeState}			
 				
 				/> } />
 
+
+<Route path="/menu" element={ <Menu
+
+adminid ={adminid}
+fullTraining={fullTraining}
+connection={connection}
+setConnection={setConnection}
+
+/>}/>
+
+
 <Route path="/machine" element={ <Machine
 
   squat={squat}
+  connection={connection}
+  setConnection={setConnection}
   developpe={developpe}
   guide={guide}
   haltere={haltere}
@@ -261,37 +433,19 @@ setSerSquat6={setSerSquat6}
 setSerSquat7={setSerSquat7}
 setSerSquat8={setSerSquat8}
 setSerSquat9={setSerSquat9}
-setSerSquat10={setSerSquat10}
 
-/> } />
+connection={connection}
+setConnection={setConnection}
+
+/>}/>
 
 <Route path="/developpe" element={ <Developpe
 
-repDev1={repDev1}
-repDev2={repDev2}
-repDev3={repDev3}
-repDev4={repDev4}
-repDev5={repDev5}
-repDev6={repDev6}
-repDev7={repDev7}
-repDev8={repDev8}
-repDev9={repDev9}
-repDev10={repDev10}
-repDev11={repDev11}
-repDev12={repDev12}
-repDev13={repDev13}
-repDev14={repDev14}
-repDev15={repDev15}
-repDev16={repDev16}
-repDev17={repDev17}
-repDev18={repDev18}
-repDev19={repDev19}
-repDev20={repDev20}
-repDev21={repDev21}
 repDev22={repDev22}
 repDev23={repDev23}
 repDev24={repDev24}
-repDev25={repDev25}
+repDev24={repDev24}
+
 
 setRepDev1={setRepDev1}
 setRepDev2={setRepDev2}
@@ -317,7 +471,7 @@ setRepDev21={setRepDev21}
 setRepDev22={setRepDev22}
 setRepDev23={setRepDev23}
 setRepDev24={setRepDev24}
-setRepDev25={setRepDev25}
+
 
 serDev1={serDev1}
 serDev2={serDev2}
@@ -343,7 +497,7 @@ serDev21={serDev21}
 serDev22={serDev22}
 serDev23={serDev23}
 serDev24={serDev24}
-serDev25={serDev25}
+
 
 setSerDev1={setSerDev1}
 setSerDev2={setSerDev2}
@@ -369,7 +523,11 @@ setSerDev21={setSerDev21}
 setSerDev22={setSerDev22}
 setSerDev23={setSerDev23}
 setSerDev24={setSerDev24}
-setSerDev25={setSerDev25}
+
+trainingSubmit={trainingSubmit}
+connection={connection}
+setConnection={setConnection}
+
 
 
 
@@ -466,6 +624,10 @@ setSerGuide18={setSerGuide18}
 setSerGuide20={setSerGuide20}
 setSerGuide21={setSerGuide21}
 
+trainingSubmit={trainingSubmit}
+connection={connection}
+setConnection={setConnection}
+
 
 /> } />
 
@@ -532,6 +694,10 @@ setSerHaltere12={setSerHaltere12}
 setSerHaltere13={setSerHaltere13}
 setSerHaltere14={setSerHaltere14}
 
+trainingSubmit={trainingSubmit}
+connection={connection}
+setConnection={setConnection}
+
 
 
 /> } />
@@ -539,160 +705,55 @@ setSerHaltere14={setSerHaltere14}
 
 
 
-<Route path="/training" element={ <Training
+<Route path="/training/:id" element={ <Training
 
-repSquat1={repSquat1}
-repSquat2={repSquat2}
-repSquat3={repSquat3}
-repSquat4={repSquat4}
-repSquat5={repSquat5}
-repSquat6={repSquat6}
-repSquat7={repSquat7}
-repSquat8={repSquat8}
-repSquat9={repSquat9}
-repSquat10={repSquat10}
+fullTraining={fullTraining}
+getTraining={getTraining}
+adminid={adminid}
+connection={connection}
+setConnection={setConnection}
 
-serSquat1={serSquat1}
-serSquat2={serSquat2}
-serSquat3={serSquat3}
-serSquat4={serSquat4}
-serSquat5={serSquat5}
-serSquat6={serSquat6}
-serSquat7={serSquat7}
-serSquat8={serSquat8}
-serSquat9={serSquat9}
-serSquat10={serSquat10}
-
-repDev1={repDev1}
-repDev2={repDev2}
-repDev3={repDev3}
-repDev4={repDev4}
-repDev5={repDev5}
-repDev6={repDev6}
-repDev7={repDev7}
-repDev8={repDev8}
-repDev9={repDev9}
-repDev10={repDev10}
-repDev11={repDev11}
-repDev12={repDev12}
-repDev13={repDev13}
-repDev14={repDev14}
-repDev15={repDev15}
-repDev16={repDev16}
-repDev17={repDev17}
-repDev18={repDev18}
-repDev19={repDev19}
-repDev20={repDev20}
-repDev21={repDev21}
-repDev22={repDev22}
-repDev23={repDev23}
-repDev24={repDev24}
-repDev25={repDev25}
-
-serDev1={serDev1}
-serDev2={serDev2}
-serDev3={serDev3}
-serDev4={serDev4}
-serDev5={serDev5}
-serDev6={serDev6}
-serDev7={serDev7}
-serDev8={serDev8}
-serDev9={serDev9}
-serDev10={serDev10}
-serDev11={serDev11}
-serDev12={serDev12}
-serDev13={serDev13}
-serDev14={serDev14}
-serDev15={serDev15}
-serDev16={serDev16}
-serDev17={serDev17}
-serDev18={serDev18}
-serDev19={serDev19}
-serDev20={serDev20}
-serDev21={serDev21}
-serDev22={serDev22}
-serDev23={serDev23}
-serDev24={serDev24}
-serDev25={serDev25}
-
-repHaltere1={repHaltere1}
-repHaltere2={repHaltere2}
-repHaltere3={repHaltere3}
-repHaltere4={repHaltere4}
-repHaltere5={repHaltere5}
-repHaltere6={repHaltere6}
-repHaltere7={repHaltere7}
-repHaltere8={repHaltere8}
-repHaltere9={repHaltere9}
-repHaltere10={repHaltere10}
-repHaltere11={repHaltere11}
-repHaltere12={repHaltere12}
-repHaltere13={repHaltere13}
-repHaltere14={repHaltere14}
-
-serHaltere1={serHaltere1}
-serHaltere2={serHaltere2}
-serHaltere3={serHaltere3}
-serHaltere4={serHaltere4}
-serHaltere5={serHaltere5}
-serHaltere6={serHaltere6}
-serHaltere7={serHaltere7}
-serHaltere8={serHaltere8}
-serHaltere9={serHaltere9}
-serHaltere10={serHaltere10}
-serHaltere11={serHaltere11}
-serHaltere12={serHaltere12}
-serHaltere13={serHaltere13}
-serHaltere14={serHaltere14}
-
-repGuide1={repGuide1}
-repGuide2={repGuide2}
-repGuide3={repGuide3}
-repGuide4={repGuide4}
-repGuide5={repGuide5}
-repGuide6={repGuide6}
-repGuide7={repGuide7}
-repGuide8={repGuide8}
-repGuide9={repGuide9}
-repGuide10={repGuide10}
-repGuide11={repGuide11}
-repGuide12={repGuide12}
-repGuide13={repGuide13}
-repGuide14={repGuide14}
-repGuide15={repGuide15}
-repGuide16={repGuide16}
-repGuide17={repGuide17}
-repGuide18={repGuide18}
-repGuide20={repGuide20}
-repGuide21={repGuide21}
-
-serGuide1={serGuide1}
-serGuide2={serGuide2}
-serGuide3={serGuide3}
-serGuide4={serGuide4}
-serGuide5={serGuide5}
-serGuide6={serGuide6}
-serGuide7={serGuide7}
-serGuide8={serGuide8}
-serGuide9={serGuide9}
-serGuide10={serGuide10}
-serGuide11={serGuide11}
-serGuide12={serGuide12}
-serGuide13={serGuide13}
-serGuide14={serGuide14}
-serGuide15={serGuide15}
-serGuide16={serGuide16}
-serGuide17={serGuide17}
-serGuide18={serGuide18}
-serGuide20={serGuide20}
-serGuide21={serGuide21}
-
-
-
+setDeleteTraining={setDeleteTraining}
+deleteOneTraining={deleteOneTraining}
 
 /> } />
 
 			 </Routes>
+
+			 :
+<Routes>
+			 <Route path="/" element={ <Home /> } />
+			 <Route path="/registration" element={ <Registration 
+
+firstname ={firstname}
+lastname={lastname}
+email={email}
+password={password}
+
+setfirstname={setfirstname}
+setlastname={setlastname}
+setemail={setemail}
+setpassword={setpassword}
+
+inscriptionSubmit ={inscriptionSubmit}/>} />
+
+<Route path="/connection" element={ <Connection
+
+email={email}
+password={password}
+setemail={setemail}
+setpassword={setpassword}
+connectionSubmit={connectionSubmit}
+
+
+
+/>} />
+
+<Route path="*" element={ <NotFound /> } />
+
+</Routes>
+}
+
 			
 
 		

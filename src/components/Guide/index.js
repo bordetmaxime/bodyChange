@@ -1,25 +1,25 @@
 import Header from '../Header';
 
-import Guide1 from '../../assets/guide/guide1.gif';
-import Guide2 from '../../assets/guide/guide2.gif';
-import Guide3 from '../../assets/guide/guide3.gif';
-import Guide4 from '../../assets/guide/guide4.gif';
-import Guide5 from '../../assets/guide/guide5.gif';
-import Guide6 from '../../assets/guide/guide6.gif';
-import Guide7 from '../../assets/guide/guide7.gif';
-import Guide8 from '../../assets/guide/guide8.gif';
-import Guide9 from '../../assets/guide/guide9.gif';
-import Guide10 from '../../assets/guide/guide10.gif';
-import Guide11 from '../../assets/guide/guide11.gif';
-import Guide12 from '../../assets/guide/guide12.gif';
-import Guide13 from '../../assets/guide/guide13.gif';
-import Guide14 from '../../assets/guide/guide14.gif';
-import Guide15 from '../../assets/guide/guide15.gif';
-import Guide16 from '../../assets/guide/guide16.gif';
-import Guide17 from '../../assets/guide/guide17.gif';
-import Guide18 from '../../assets/guide/guide18.gif';
-import Guide20 from '../../assets/guide/guide20.gif';
-import Guide21 from '../../assets/guide/guide21.gif';
+import guide1 from '../../assets/guide1.gif';
+import guide2 from '../../assets/guide2.gif';
+import guide3 from '../../assets/guide3.gif';
+import guide4 from '../../assets/guide4.gif';
+import guide5 from '../../assets/guide5.gif';
+import guide6 from '../../assets/guide6.gif';
+import guide7 from '../../assets/guide7.gif';
+import guide8 from '../../assets/guide8.gif';
+import guide9 from '../../assets/guide9.gif';
+import guide10 from '../../assets/guide10.gif';
+import guide11 from '../../assets/guide11.gif';
+import guide12 from '../../assets/guide12.gif';
+import guide13 from '../../assets/guide13.gif';
+import guide14 from '../../assets/guide14.gif';
+import guide15 from '../../assets/guide15.gif';
+import guide16 from '../../assets/guide16.gif';
+import guide17 from '../../assets/guide17.gif';
+import guide18 from '../../assets/guide18.gif';
+import guide20 from '../../assets/guide20.gif';
+import guide21 from '../../assets/guide21.gif';
 import { Link } from 'react-router-dom';
 
 const Guide = ({repGuide1, repGuide2,repGuide3, repGuide4,repGuide5, repGuide6, repGuide7, repGuide8, repGuide9, repGuide10, repGuide11, repGuide12, repGuide13, repGuide14, repGuide15, repGuide16,
@@ -27,7 +27,7 @@ const Guide = ({repGuide1, repGuide2,repGuide3, repGuide4,repGuide5, repGuide6, 
 	setRepGuide6, setRepGuide7, setRepGuide8, setRepGuide9, setRepGuide10, setRepGuide12, setRepGuide13, setRepGuide14, setRepGuide16, setRepGuide17, setRepGuide18,
 	setRepGuide20, setRepGuide21, serGuide1, serGuide2, serGuide3, serGuide4, serGuide5, serGuide6, serGuide7, serGuide8, serGuide9, 
 	serGuide10, serGuide11, serGuide12, serGuide13, serGuide14, serGuide15, serGuide16, serGuide17, serGuide18, serGuide20, serGuide21, setSerGuide1, setSerGuide2, setSerGuide3, setSerGuide4, setSerGuide5, setSerGuide6, setSerGuide7, setSerGuide8, setSerGuide9, setSerGuide10, setSerGuide11, setSerGuide12,
-	setSerGuide13, setSerGuide14, setSerGuide16, setSerGuide17, setSerGuide18, setSerGuide21 }) => {
+	setSerGuide13, setSerGuide14, setSerGuide16, setSerGuide17, setSerGuide18, setSerGuide21, trainingSubmit, connection, setConnection}) => {
 
 	const inputValue = (event) => {
 
@@ -166,12 +166,16 @@ const Guide = ({repGuide1, repGuide2,repGuide3, repGuide4,repGuide5, repGuide6, 
 
 return(
 	<div className='guide'>
-<Header />
+<Header connection={connection}
+setConnection={setConnection} />
 
-<div class="d-flex justify-content-around flex-wrap">
+<div class="container-fluid">
 
-			<div className="card w-25 m-2"  >
-  <img src={Guide1}  className="card-img-top" alt="..."/>
+<form onSubmit={trainingSubmit}>
+
+<div className="row">
+			<div className="card m-2 col-md "  >
+  <img src={guide1}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide1">nombre de série:</label>
@@ -183,8 +187,8 @@ return(
 </div>
 
 
-<div className="card w-25 m-2"  >
-  <img src={Guide2}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide2}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide2">nombre de série:</label>
@@ -198,8 +202,8 @@ return(
 
 
 
-<div className="card w-25 m-2"  >
-  <img src={Guide3}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"   >
+  <img src={guide3}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide1">nombre de série:</label>
@@ -212,8 +216,12 @@ return(
 
 
 
-<div className="card w-25 m-2"  >
-  <img src={Guide4}  className="card-img-top" alt="..."/>
+
+
+
+
+<div className="card m-2 col-md"  >
+  <img src={guide4}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide4">nombre de série:</label>
@@ -224,10 +232,12 @@ return(
   </div>
 </div>
 
+</div>
 
+<div className="row">
 
-<div className="card w-25 m-2"  >
-  <img src={Guide5}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide5}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide5">nombre de série:</label>
@@ -240,8 +250,8 @@ return(
 
 
 
-<div className="card w-25 m-2"  >
-  <img src={Guide6}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide6}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide6">nombre de série:</label>
@@ -254,8 +264,8 @@ return(
 
 
 
-<div className="card w-25 m-2"  >
-  <img src={Guide7}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide7}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide7">nombre de série:</label>
@@ -268,8 +278,8 @@ return(
 
 
 
-<div className="card w-25 m-2"  >
-  <img src={Guide8}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide8}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide8">nombre de série:</label>
@@ -280,10 +290,12 @@ return(
   </div>
 </div>
 
+</div>
 
+<div className="row">
 
-<div className="card w-25 m-2"  >
-  <img src={Guide9}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide9}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide9">nombre de série:</label>
@@ -296,8 +308,8 @@ return(
 
 
 
-<div className="card w-25 m-2"  >
-  <img src={Guide10}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide10}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide10">nombre de série:</label>
@@ -310,8 +322,8 @@ return(
 
 
 
-<div className="card w-25 m-2"  >
-  <img src={Guide11}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide11}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide11">nombre de série:</label>
@@ -324,8 +336,8 @@ return(
 
 
 
-<div className="card w-25 m-2"  >
-  <img src={Guide12}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide12}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide12">nombre de série:</label>
@@ -336,10 +348,13 @@ return(
   </div>
 </div>
 
+</div>
+
+<div className="row">
 
 
-<div className="card w-25 m-2"  >
-  <img src={Guide13}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide13}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide13">nombre de série:</label>
@@ -352,8 +367,8 @@ return(
 
 
 
-<div className="card w-25 m-2"  >
-  <img src={Guide14}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide14}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide14">nombre de série:</label>
@@ -364,8 +379,8 @@ return(
   </div>
    </div>
 
-  <div className="card w-25 m-2"  >
-  <img src={Guide15}  className="card-img-top" alt="..."/>
+  <div className="card m-2 col-md"  >
+  <img src={guide15}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide15">nombre de série:</label>
@@ -380,8 +395,8 @@ return(
 
 
 
-<div className="card w-25 m-2"  >
-  <img src={Guide16}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide16}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide16">nombre de série:</label>
@@ -392,10 +407,13 @@ return(
   </div>
 </div>
 
+</div>
+
+<div className="row">
 
 
-<div className="card w-25 m-2"  >
-  <img src={Guide17}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide17}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide17">nombre de série:</label>
@@ -408,8 +426,8 @@ return(
 
 
 
-<div className="card w-25 m-2"  >
-  <img src={Guide18}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide18}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide18">nombre de série:</label>
@@ -421,9 +439,8 @@ return(
 </div>
 
 
-
-<div className="card w-25 m-2"  >
-  <img src={Guide20}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide20}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide20">nombre de série:</label>
@@ -434,10 +451,8 @@ return(
   </div>
 </div>
 
-
-
-<div className="card w-25 m-2"  >
-  <img src={Guide21}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={guide21}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	  
 	<label for="cardserGuide21">nombre de série:</label>
@@ -448,27 +463,16 @@ return(
   </div>
 </div>
 
-
-
-<div className="card w-25 m-2"  >
-  <img src={Guide1}  className="card-img-top" alt="..."/>
-  <div className="card-body">
-	  
-	<label for="cardserGuide1">nombre de série:</label>
-  <input type="number" id="cardserGuide1"  value={serGuide1} name="serGuide1" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide1">nombre de répétion:</label>
-    <input type="number" id="cardrepGuide1"  value={repGuide1} name="repGuide1" className="w-75 m-auto" onChange={inputValue}/>	
-
-  </div>
 </div>
-
 
 <div className="d-flex justify-content-center m-5">
-<button><Link to="/training">Voir mon entrainement</Link></button>
-<button><Link to="/machine">choisir d'autres éxercices</Link></button>
+<button type="submit" class="btn btn-primary btn-lg m-2">Enregistrer l'entrainement</button>
+<button type="button" class="btn btn-secondary btn-lg m-2"><Link to="/machine">Choisir d'autres éxercices</Link></button>
 
 </div>
 
+
+</form>
 
 </div>
 

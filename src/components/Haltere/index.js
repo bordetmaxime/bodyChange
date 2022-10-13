@@ -1,20 +1,20 @@
 import Header from '../Header';
 import { Link } from 'react-router-dom';
 
-import Haltere1 from '../../assets/haltere/haltere1.gif';
-import Haltere2 from '../../assets/haltere/haltere2.gif';
-import Haltere3 from '../../assets/haltere/haltere3.gif';
-import Haltere4 from '../../assets/haltere/haltere4.gif';
-import Haltere5 from '../../assets/haltere/haltere5.gif';
-import Haltere6 from '../../assets/haltere/haltere6.gif';
-import Haltere7 from '../../assets/haltere/haltere7.gif';
-import Haltere8 from '../../assets/haltere/haltere8.gif';
-import Haltere9 from '../../assets/haltere/haltere9.gif';
-import Haltere10 from '../../assets/haltere/haltere10.gif';
-import Haltere11 from '../../assets/haltere/haltere11.gif';
-import Haltere12 from '../../assets/haltere/haltere12.gif';
-import Haltere13 from '../../assets/haltere/haltere13.gif';
-import Haltere14 from '../../assets/haltere/haltere14.gif';
+import haltere1 from '../../assets/haltere1.gif';
+import haltere2 from '../../assets/haltere2.gif';
+import haltere3 from '../../assets/haltere3.gif';
+import haltere4 from '../../assets/haltere4.gif';
+import haltere5 from '../../assets/haltere5.gif';
+import haltere6 from '../../assets/haltere6.gif';
+import haltere7 from '../../assets/haltere7.gif';
+import haltere8 from '../../assets/haltere8.gif';
+import haltere9 from '../../assets/haltere9.gif';
+import haltere10 from '../../assets/haltere10.gif';
+import haltere11 from '../../assets/haltere11.gif';
+import haltere12 from '../../assets/haltere12.gif';
+import haltere13 from '../../assets/haltere13.gif';
+import haltere14 from '../../assets/haltere14.gif';
 
 
 const Haltere = ({repHaltere1, repHaltere2,repHaltere3, repHaltere4,repHaltere5, repHaltere6, repHaltere7,
@@ -23,7 +23,7 @@ const Haltere = ({repHaltere1, repHaltere2,repHaltere3, repHaltere4,repHaltere5,
 	 setRepHaltere14, serHaltere1, serHaltere2, serHaltere3, serHaltere4, serHaltere5, serHaltere6, serHaltere7, serHaltere8, serHaltere9, serHaltere10,
 	  serHaltere11, serHaltere12, serHaltere13, serHaltere14, setSerHaltere1, setSerHaltere2, setSerHaltere3, setSerHaltere4, setSerHaltere5, setSerHaltere6, 
 	  setSerHaltere7, setSerHaltere8, setSerHaltere9, setSerHaltere10, setSerHaltere11, setSerHaltere12,
-	  setSerHaltere13, setSerHaltere14,
+	  setSerHaltere13, setSerHaltere14,trainingSubmit, connection, setConnection
 	 }) => {
 
 
@@ -126,11 +126,16 @@ const Haltere = ({repHaltere1, repHaltere2,repHaltere3, repHaltere4,repHaltere5,
 		}; 
 return(
 	<div className='haltere'>
-<Header />
+<Header connection={connection}
+setConnection={setConnection} />
 
-<div class="d-flex justify-content-around flex-wrap">
-			<div className="card w-25 m-2"  >
-  <img src={Haltere1}  className="card-img-top" alt="..."/>
+<div class="container-fluid">
+
+<form onSubmit={trainingSubmit}>
+
+	<div className="row">
+			<div className="card m-2 col-md"  >
+  <img src={haltere1}  className="card-img-top" alt="..."/>
   <div className="card-body">
 	<label for="cardserHaltere1">nombre de série:</label>
   <input type="number" id="cardserHaltere1" value={serHaltere1} name="serHaltere1"  className="w-75 m-auto" onChange={inputValue} />
@@ -140,8 +145,8 @@ return(
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Haltere2}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={haltere2}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserHaltere2">nombre de série:</label>
@@ -152,8 +157,8 @@ return(
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Haltere3}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={haltere3}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserHaltere3">nombre de série:</label>
@@ -164,8 +169,8 @@ return(
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Haltere4}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={haltere4}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserHaltere4">nombre de série:</label>
@@ -176,8 +181,12 @@ return(
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Haltere5}  className="card-img-top" alt="..."/>
+</div>
+
+<div className="row">
+
+<div className="card m-2 col-md"  >
+  <img src={haltere5}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserHaltere5">nombre de série:</label>
@@ -188,8 +197,8 @@ return(
   </div>
   </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Haltere6}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={haltere6}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserHaltere6">nombre de série:</label>
@@ -200,8 +209,8 @@ return(
    </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Haltere7}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={haltere7}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserHaltere7">nombre de série:</label>
@@ -212,8 +221,8 @@ return(
    </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Haltere8}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={haltere8}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserHaltere8">nombre de série:</label>
@@ -224,8 +233,11 @@ return(
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Haltere9}  className="card-img-top" alt="..."/>
+</div>
+<div className="row">
+
+<div className="card m-2 col-md"  >
+  <img src={haltere9}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserHaltere9">nombre de série:</label>
@@ -236,8 +248,8 @@ return(
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Haltere10}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={haltere10}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserHaltere10">nombre de série:</label>
@@ -248,8 +260,8 @@ return(
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Haltere11}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={haltere11}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserHaltere11">nombre de série:</label>
@@ -260,8 +272,8 @@ return(
   </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Haltere12}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md"  >
+  <img src={haltere12}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserHaltere12">nombre de série:</label>
@@ -272,8 +284,11 @@ return(
    </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Haltere13}  className="card-img-top" alt="..."/>
+</div>
+<div className="row">
+
+<div className="card m-2 col-md-3"  >
+  <img src={haltere13}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserHaltere13">nombre de série:</label>
@@ -284,8 +299,8 @@ return(
    </div>
 </div>
 
-<div className="card w-25 m-2"  >
-  <img src={Haltere14}  className="card-img-top" alt="..."/>
+<div className="card m-2 col-md-3"  >
+  <img src={haltere14}  className="card-img-top" alt="..."/>
   <div className="card-body">
 
 	<label for="cardserHaltere14">nombre de série:</label>
@@ -295,18 +310,20 @@ return(
 	
     </div>
 </div>
-
-
 </div>
 
 <div className="d-flex justify-content-center m-5">
-<button><Link to="/training">Voir mon entrainement</Link></button>
-<button><Link to="/machine">choisir d'autres éxercices</Link></button>
 
-
+<button type="submit" class="btn btn-primary btn-lg m-2">Enregistrer l'entrainement</button>
+<button type="button" class="btn btn-secondary btn-lg m-2"><Link to="/machine">Choisir d'autres éxercices</Link></button>
 
 </div>
-	</div>
+
+</form>
+
+</div>
+</div>
+
 )
 
 
