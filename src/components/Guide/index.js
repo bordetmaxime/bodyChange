@@ -1,4 +1,5 @@
 import Header from '../Header';
+import './styles.scss';
 
 import guide1 from '../../assets/guide1.gif';
 import guide2 from '../../assets/guide2.gif';
@@ -27,7 +28,7 @@ const Guide = ({repGuide1, repGuide2,repGuide3, repGuide4,repGuide5, repGuide6, 
 	setRepGuide6, setRepGuide7, setRepGuide8, setRepGuide9, setRepGuide10, setRepGuide12, setRepGuide13, setRepGuide14, setRepGuide16, setRepGuide17, setRepGuide18,
 	setRepGuide20, setRepGuide21, serGuide1, serGuide2, serGuide3, serGuide4, serGuide5, serGuide6, serGuide7, serGuide8, serGuide9, 
 	serGuide10, serGuide11, serGuide12, serGuide13, serGuide14, serGuide15, serGuide16, serGuide17, serGuide18, serGuide20, serGuide21, setSerGuide1, setSerGuide2, setSerGuide3, setSerGuide4, setSerGuide5, setSerGuide6, setSerGuide7, setSerGuide8, setSerGuide9, setSerGuide10, setSerGuide11, setSerGuide12,
-	setSerGuide13, setSerGuide14, setSerGuide16, setSerGuide17, setSerGuide18, setSerGuide21, trainingSubmit, connection, setConnection}) => {
+	setSerGuide13, setSerGuide14, setSerGuide16, setSerGuide17, setSerGuide18, setSerGuide21, trainingSubmit, connexion, setConnexion}) => {
 
 	const inputValue = (event) => {
 
@@ -166,8 +167,8 @@ const Guide = ({repGuide1, repGuide2,repGuide3, repGuide4,repGuide5, repGuide6, 
 
 return(
 	<div className='guide'>
-<Header connection={connection}
-setConnection={setConnection} />
+<Header connexion={connexion}
+setConnexion={setConnexion} />
 
 <div class="container-fluid">
 
@@ -176,7 +177,7 @@ setConnection={setConnection} />
 <div className="row">
 			<div className="card m-2 col-md "  >
   <img src={guide1}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide1">nombre de série:</label>
   <input type="number" id="cardserGuide1"  value={serGuide1} name="serGuide1" className="w-75 m-auto" onChange={inputValue}/>
@@ -189,7 +190,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide2}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide2">nombre de série:</label>
   <input type="number" id="cardserGuide2"  value={serGuide2} name="serGuide2" className="w-75 m-auto" onChange={inputValue}/>
@@ -204,7 +205,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"   >
   <img src={guide3}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide1">nombre de série:</label>
   <input type="number" id="cardserGuide3"  value={serGuide3} name="serGuide3" className="w-75 m-auto" onChange={inputValue}/>
@@ -222,7 +223,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide4}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide4">nombre de série:</label>
   <input type="number" id="cardserGuide4"  value={serGuide4} name="serGuide4" className="w-75 m-auto" onChange={inputValue}/>
@@ -238,7 +239,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide5}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide5">nombre de série:</label>
   <input type="number" id="cardserGuide5"  value={serGuide5} name="serGuide5" className="w-75 m-auto" onChange={inputValue}/>
@@ -252,7 +253,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide6}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide6">nombre de série:</label>
   <input type="number" id="cardserGuide6"  value={serGuide6} name="serGuide6" className="w-75 m-auto" onChange={inputValue}/>
@@ -266,7 +267,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide7}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide7">nombre de série:</label>
   <input type="number" id="cardserGuide7"  value={serGuide7} name="serGuide7" className="w-75 m-auto" onChange={inputValue}/>
@@ -280,7 +281,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide8}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide8">nombre de série:</label>
   <input type="number" id="cardserGuide8"  value={serGuide8} name="serGuide8" className="w-75 m-auto" onChange={inputValue}/>
@@ -296,7 +297,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide9}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide9">nombre de série:</label>
   <input type="number" id="cardserGuide9"  value={serGuide9} name="serGuide9" className="w-75 m-auto" onChange={inputValue}/>
@@ -310,7 +311,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide10}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide10">nombre de série:</label>
   <input type="number" id="cardserGuide10"  value={serGuide10} name="serGuide10" className="w-75 m-auto" onChange={inputValue}/>
@@ -324,7 +325,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide11}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide11">nombre de série:</label>
   <input type="number" id="cardserGuide11"  value={serGuide11} name="serGuide11" className="w-75 m-auto" onChange={inputValue}/>
@@ -338,7 +339,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide12}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide12">nombre de série:</label>
   <input type="number" id="cardserGuide12"  value={serGuide12} name="serGuide12" className="w-75 m-auto" onChange={inputValue}/>
@@ -355,7 +356,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide13}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide13">nombre de série:</label>
   <input type="number" id="cardserGuide13"  value={serGuide13} name="serGuide13" className="w-75 m-auto" onChange={inputValue}/>
@@ -369,7 +370,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide14}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide14">nombre de série:</label>
   <input type="number" id="cardserGuide14"  value={serGuide14} name="serGuide14" className="w-75 m-auto" onChange={inputValue}/>
@@ -381,7 +382,7 @@ setConnection={setConnection} />
 
   <div className="card m-2 col-md"  >
   <img src={guide15}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide15">nombre de série:</label>
   <input type="number" id="cardserGuide15"  value={serGuide15} name="serGuide15" className="w-75 m-auto" onChange={inputValue}/>
@@ -397,7 +398,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide16}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide16">nombre de série:</label>
   <input type="number" id="cardserGuide16"  value={serGuide16} name="serGuide16" className="w-75 m-auto" onChange={inputValue}/>
@@ -414,7 +415,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide17}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide17">nombre de série:</label>
   <input type="number" id="cardserGuide17"  value={serGuide17} name="serGuide17" className="w-75 m-auto" onChange={inputValue}/>
@@ -428,7 +429,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide18}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide18">nombre de série:</label>
   <input type="number" id="cardserGuide18"  value={serGuide18} name="serGuide18" className="w-75 m-auto" onChange={inputValue}/>
@@ -441,7 +442,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide20}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide20">nombre de série:</label>
   <input type="number" id="cardserGuide20"  value={serGuide20} name="serGuide20" className="w-75 m-auto" onChange={inputValue}/>
@@ -453,7 +454,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={guide21}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	  
 	<label for="cardserGuide21">nombre de série:</label>
   <input type="number" id="cardserGuide21"  value={serGuide21} name="serGuide21" className="w-75 m-auto" onChange={inputValue}/>
@@ -465,7 +466,7 @@ setConnection={setConnection} />
 
 </div>
 
-<div className="d-flex justify-content-center m-5">
+<div className="d-flex justify-content-center m-5 exercice_all_button">
 <button type="submit" class="btn btn-primary btn-lg m-2">Enregistrer l'entrainement</button>
 <button type="button" class="btn btn-secondary btn-lg m-2"><Link to="/machine">Choisir d'autres éxercices</Link></button>
 

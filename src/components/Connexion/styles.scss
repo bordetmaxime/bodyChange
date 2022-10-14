@@ -1,0 +1,17 @@
+.btn_connexion{
+background-color: lightgray;
+color:black;
+margin: auto;
+width: 35%;
+border-radius:10px;
+font-size:1.2rem;
+border:2px solid #007bff;
+
+
+&:hover{
+cursor: pointer;
+transform: scale(1.05);
+					
+}
+
+}

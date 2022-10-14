@@ -23,7 +23,7 @@ const Haltere = ({repHaltere1, repHaltere2,repHaltere3, repHaltere4,repHaltere5,
 	 setRepHaltere14, serHaltere1, serHaltere2, serHaltere3, serHaltere4, serHaltere5, serHaltere6, serHaltere7, serHaltere8, serHaltere9, serHaltere10,
 	  serHaltere11, serHaltere12, serHaltere13, serHaltere14, setSerHaltere1, setSerHaltere2, setSerHaltere3, setSerHaltere4, setSerHaltere5, setSerHaltere6, 
 	  setSerHaltere7, setSerHaltere8, setSerHaltere9, setSerHaltere10, setSerHaltere11, setSerHaltere12,
-	  setSerHaltere13, setSerHaltere14,trainingSubmit, connection, setConnection
+	  setSerHaltere13, setSerHaltere14,trainingSubmit, connexion, setConnexion
 	 }) => {
 
 
@@ -126,8 +126,8 @@ const Haltere = ({repHaltere1, repHaltere2,repHaltere3, repHaltere4,repHaltere5,
 		}; 
 return(
 	<div className='haltere'>
-<Header connection={connection}
-setConnection={setConnection} />
+<Header connexion={connexion}
+setConnexion={setConnexion} />
 
 <div class="container-fluid">
 
@@ -136,7 +136,7 @@ setConnection={setConnection} />
 	<div className="row">
 			<div className="card m-2 col-md"  >
   <img src={haltere1}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 	<label for="cardserHaltere1">nombre de série:</label>
   <input type="number" id="cardserHaltere1" value={serHaltere1} name="serHaltere1"  className="w-75 m-auto" onChange={inputValue} />
  <label for="cardrepHaltere1">nombre de répétion:</label>
@@ -147,7 +147,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={haltere2}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 	<label for="cardserHaltere2">nombre de série:</label>
   <input type="number" id="cardserHaltere2"  value={serHaltere2} name="serHaltere2"  className="w-75 m-auto" onChange={inputValue}/>
@@ -159,7 +159,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={haltere3}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 	<label for="cardserHaltere3">nombre de série:</label>
   <input type="number" id="cardserHaltere3"  value={serHaltere3} name="serHaltere3" className="w-75 m-auto" onChange={inputValue}/>
@@ -171,7 +171,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={haltere4}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 	<label for="cardserHaltere4">nombre de série:</label>
   <input type="number" id="cardserHaltere4" value={serHaltere4} name="serHaltere4" className="w-75 m-auto" onChange={inputValue}/>
@@ -187,7 +187,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={haltere5}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 	<label for="cardserHaltere5">nombre de série:</label>
   <input type="number" id="cardserHaltere5" value={serHaltere5} name="serHaltere5" className="w-75 m-auto" onChange={inputValue}/>
@@ -199,7 +199,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={haltere6}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 	<label for="cardserHaltere6">nombre de série:</label>
   <input type="number" id="cardserHaltere6" value={serHaltere6} name="serHaltere6" className="w-75 m-auto" onChange={inputValue}/>
@@ -211,7 +211,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={haltere7}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 	<label for="cardserHaltere7">nombre de série:</label>
   <input type="number" id="cardserHaltere7" value={serHaltere7} name="serHaltere7" className="w-75 m-auto" onChange={inputValue}/>
@@ -223,7 +223,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={haltere8}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 	<label for="cardserHaltere8">nombre de série:</label>
   <input type="number" id="cardserHaltere8" value={serHaltere8} name="serHaltere8" className="w-75 m-auto" onChange={inputValue}/>
@@ -238,7 +238,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={haltere9}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 	<label for="cardserHaltere9">nombre de série:</label>
   <input type="number" id="cardserHaltere9" value={serHaltere9} name="serHaltere9" className="w-75 m-auto" onChange={inputValue}/>
@@ -250,7 +250,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={haltere10}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 	<label for="cardserHaltere10">nombre de série:</label>
   <input type="number" id="cardserHaltere10" value={serHaltere10} name="serHaltere10" className="w-75 m-auto" onChange={inputValue}/>
@@ -262,7 +262,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={haltere11}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 	<label for="cardserHaltere11">nombre de série:</label>
   <input type="number" id="cardserHaltere11" value={serHaltere11} name="serHaltere11" className="w-75 m-auto" onChange={inputValue}/>
@@ -274,7 +274,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md"  >
   <img src={haltere12}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 	<label for="cardserHaltere12">nombre de série:</label>
   <input type="number" id="cardserHaltere12" value={serHaltere12} name="serHaltere12" className="w-75 m-auto" onChange={inputValue}/>
@@ -289,7 +289,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md-3"  >
   <img src={haltere13}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 	<label for="cardserHaltere13">nombre de série:</label>
   <input type="number" id="cardserHaltere13" value={serHaltere13} name="serHaltere13" className="w-75 m-auto" onChange={inputValue}/>
@@ -301,7 +301,7 @@ setConnection={setConnection} />
 
 <div className="card m-2 col-md-3"  >
   <img src={haltere14}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 	<label for="cardserHaltere14">nombre de série:</label>
   <input type="number" id="cardserHaltere14" value={serHaltere14} name="serHaltere14" className="w-75 m-auto" onChange={inputValue}/>
@@ -312,7 +312,7 @@ setConnection={setConnection} />
 </div>
 </div>
 
-<div className="d-flex justify-content-center m-5">
+<div className="d-flex justify-content-center m-5 exercice_all_button">
 
 <button type="submit" class="btn btn-primary btn-lg m-2">Enregistrer l'entrainement</button>
 <button type="button" class="btn btn-secondary btn-lg m-2"><Link to="/machine">Choisir d'autres éxercices</Link></button>

@@ -1,6 +1,7 @@
 import Header from '../Header';
 import { Link } from 'react-router-dom';
 import Body from '../../assets/body.png';
+import './styles.scss';
 
 const NotFound= () => {
 	return (
@@ -17,12 +18,12 @@ const NotFound= () => {
 
 
 
-<h1>404</h1>
+<h1 className="not_found_h1">404</h1>
 
-<h2>page introuvable ! Merci de vous connecter pour accéder à cette page!</h2>
+<h2 className="not_found_h2">Page introuvable ! Merci de vous connecter pour accéder à cette page!</h2>
 
-<div className="div_btn_home"><a class="btn_home" href="#"><Link to="/registration">M'inscire</Link></a></div>
-<div className="div_btn_home"><a class="btn_home" href="#"><Link to="/connection">Me connecter</Link></a></div>
+<div className="div_btn_home"><a class="btn_home_404" href="#"><Link to="/registration">Inscription</Link></a></div>
+<div className="div_btn_home"><a class="btn_home_404" href="#"><Link to="/connexion">Connexion</Link></a></div>
 
 </div>
 

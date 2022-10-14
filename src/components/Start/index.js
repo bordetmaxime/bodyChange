@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 
 
-const Start = ({changeState, connection, setConnection}) => {
+const Start = ({changeState, connexion, setConnexion}) => {
 
 	const selectMachine =  (event) =>{
 	changeState(event)		
@@ -20,8 +20,8 @@ const Start = ({changeState, connection, setConnection}) => {
 	return (
 	<div className="start">
 
-	<Header connection={connection}
-	setConnection={setConnection}/>
+	<Header connexion={connexion}
+	setConnexion={setConnexion}/>
 	<div className="container">
 
 	<div id="carouselExampleControls" className="carousel slide w-25 h-100 m-auto" data-bs-ride="carousel" >

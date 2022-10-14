@@ -1,6 +1,7 @@
 import Header from '../Header';
+import './styles.scss';
 
-const Connection = ({email, password, connectionSubmit, setpassword, setemail}) => {
+const Connexion = ({email, password, connexionSubmit, setpassword, setemail}) => {
 
 	const inputValue = (event) => {
 		switch (event.target.name) {
@@ -18,12 +19,13 @@ const Connection = ({email, password, connectionSubmit, setpassword, setemail}) 
 
 	return (
 
-<div className="connection">
+<div className="connexion">
 
 <Header/>
 
+<div className="container">
 
-<form className="d-flex flex-column m-auto w-25 " onSubmit={connectionSubmit}>
+<form className="d-flex flex-column m-auto " onSubmit={connexionSubmit}>
 
   <div className="form-group ">
     <input type="email" name="email" value={email} className="form-control text-center" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" onChange={inputValue}/>
@@ -35,8 +37,10 @@ const Connection = ({email, password, connectionSubmit, setpassword, setemail}) 
   </div>
  
 
-  <button type="submit" className="btn btn-primary">Connection</button>
+  <button type="submit" className="btn btn-primary btn_connexion ">Connexion</button>
 </form>
+
+</div>
 
 </div>
 
@@ -45,4 +49,4 @@ const Connection = ({email, password, connectionSubmit, setpassword, setemail}) 
 
 };
 
-	export default Connection;
+	export default Connexion;

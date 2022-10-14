@@ -1,0 +1,12 @@
+
+.card_training{width:25%}
+
+@media (max-width: 800px){
+	.all_card{
+		flex-direction:column;
+	}
+	.card_training{
+		width:80%;
+		margin:auto
+	}
+}

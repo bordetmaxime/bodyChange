@@ -10,22 +10,22 @@ const Home = () => {
 	<div className="home">
 		<Header />
 	
-		<div className="container home-container">	
+		<div className="container home-container w-80">	
 
-		<ul class="list-group w-75 m-auto">  
+		<ul class="list-group m-auto">  
       <span class="badge badge-info badge-pill">1</span>
-  <li class="list-group-item d-flex justify-content-center align-items-center">
+  <li class="list-group-item d-flex justify-content-center align-items-center text-center">
    Ajouter vos machines
 
   </li>
 
      <span class="badge badge-info badge-pill">2</span>
-  <li class="list-group-item d-flex justify-content-center align-items-center ">
+  <li class="list-group-item d-flex justify-content-center align-items-center text-center ">
   Choisissez vos exercices 
  
   </li> 
     <span class="badge badge-info badge-pill">3</span>
-  <li class="list-group-item d-flex justify-content-center align-items-center ">
+  <li class="list-group-item d-flex justify-content-center align-items-center text-center ">
 Consulter votre entrainement
  
   </li>
@@ -34,10 +34,10 @@ Consulter votre entrainement
 
 </div>
 <div className="div_btn_home">
-<a className="btn_home"><Link to="/registration">m'inscrire </Link></a>
+<a className="btn_home btn_home_registration"><Link to="/registration">Inscription </Link></a>
 </div>
 <div className="div_btn_home">
-<a className="btn_home"><Link to="/connection">Me connecter </Link></a>
+<a className="btn_home btn_home_connexion"><Link to="/connexion">Connexion </Link></a>
 </div>
 	</div>
 );

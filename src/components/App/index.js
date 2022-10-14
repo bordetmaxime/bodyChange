@@ -14,7 +14,7 @@ import Haltere from '../Haltere';
 import Guide from '../Guide';
 import Training from '../Training';
 import Registration from '../Registration';
-import Connection from '../Connection';
+import Connexion from '../Connexion';
 import Menu from '../Menu';
 import NotFound from '../NotFound';
 
@@ -33,7 +33,7 @@ const App = () => {
 	const [lastname, setlastname] = useState('')
 	const [password, setpassword] = useState('')
 	const [email, setemail] = useState('')
-	const [connection, setConnection] = useState(false)
+	const [connexion, setConnexion] = useState(false)
 	const [adminid, setadminid] = useState()
 	const [fullTraining, setfullTraining] = useState('')
 	const [deleteTraining, setDeleteTraining] = useState()
@@ -205,7 +205,7 @@ event.preventDefault()
 register()	
 };
 
-const connectionSubmit = (event) => {
+const connexionSubmit = (event) => {
 	event.preventDefault();
 	login();
 };
@@ -213,14 +213,14 @@ const connectionSubmit = (event) => {
 // req axios
 
 const register = async () => {
-	await axios.post('http://localhost:5100/admin', {
+	await axios.post('http://localhost:5000/admin', {
 		firstname,
 		lastname,		
 		email,
 		password,
 
 	}).then(response => {
-		navigate('/connection');
+		navigate('/connexion');
 	})
 .catch(error => {
 
@@ -232,7 +232,7 @@ getTraining()
 
 
 const getTraining = async () => {
-await axios.get(`http://localhost:5100/training/${adminid}`).then(response => {
+await axios.get(`http://localhost:5000/training/${adminid}`).then(response => {
 setfullTraining(response.data)
 		
 	})
@@ -245,7 +245,7 @@ setfullTraining(response.data)
 };
 
 const deleteOneTraining = async () => {
-	await axios.delete(`http://localhost:5100/training/${deleteTraining}`)
+	await axios.delete(`http://localhost:5000/training/${deleteTraining}`)
 	.then(response => {
      navigate(`/training/${adminid}`)
 	})
@@ -262,13 +262,13 @@ const deleteOneTraining = async () => {
 
 
 const login = async () => {
-	await axios.post('http://localhost:5100/admin/user', {
+	await axios.post('http://localhost:5000/admin/user', {
 		email,
 		password,
 
 	}).then(response => {
 			
-		setConnection(true);
+		setConnexion(true);
 		setpassword('');
 		setadminid(response.data.admin_id)
 	    getTraining()
@@ -285,7 +285,7 @@ const login = async () => {
 
 
 const trainingPost = async () => {
-	await axios.post('http://localhost:5100/training', {
+	await axios.post('http://localhost:5000/training', {
 	adminid,
 
 	repDev1, repDev2,repDev3, repDev4,repDev5, repDev6, repDev7, repDev8, repDev9, repDev10, repDev11, repDev12, repDev13, repDev14, repDev15, repDev16,
@@ -311,7 +311,7 @@ const trainingPost = async () => {
 
 	}).then(response => {
 			
-		setConnection(true);
+		setConnexion(true);
 		setpassword('');
 		navigate(`/training/${adminid}`);
 
@@ -352,7 +352,7 @@ const trainingPost = async () => {
 		<div className="app">
 {
 
-	connection ? 
+	connexion ? 
 
 
 
@@ -371,8 +371,8 @@ const trainingPost = async () => {
 
 adminid ={adminid}
 fullTraining={fullTraining}
-connection={connection}
-setConnection={setConnection}
+connexion={connexion}
+setConnexion={setConnexion}
 
 />}/>
 
@@ -380,8 +380,8 @@ setConnection={setConnection}
 <Route path="/machine" element={ <Machine
 
   squat={squat}
-  connection={connection}
-  setConnection={setConnection}
+  connexion={connexion}
+  setConnexion={setConnexion}
   developpe={developpe}
   guide={guide}
   haltere={haltere}
@@ -390,6 +390,8 @@ setConnection={setConnection}
 />}/>
 
 <Route path="/squat" element={ <Squat
+
+adminid={adminid}
 
 repSquat1={repSquat1}
 repSquat2={repSquat2}
@@ -433,9 +435,12 @@ setSerSquat6={setSerSquat6}
 setSerSquat7={setSerSquat7}
 setSerSquat8={setSerSquat8}
 setSerSquat9={setSerSquat9}
+setSerSquat10={setSerSquat10}
 
-connection={connection}
-setConnection={setConnection}
+
+connexion={connexion}
+setConnexion={setConnexion}
+trainingSubmit={trainingSubmit}
 
 />}/>
 
@@ -525,8 +530,8 @@ setSerDev23={setSerDev23}
 setSerDev24={setSerDev24}
 
 trainingSubmit={trainingSubmit}
-connection={connection}
-setConnection={setConnection}
+connexion={connexion}
+setConnexion={setConnexion}
 
 
 
@@ -625,8 +630,8 @@ setSerGuide20={setSerGuide20}
 setSerGuide21={setSerGuide21}
 
 trainingSubmit={trainingSubmit}
-connection={connection}
-setConnection={setConnection}
+connexion={connexion}
+setConnexion={setConnexion}
 
 
 /> } />
@@ -695,8 +700,8 @@ setSerHaltere13={setSerHaltere13}
 setSerHaltere14={setSerHaltere14}
 
 trainingSubmit={trainingSubmit}
-connection={connection}
-setConnection={setConnection}
+connexion={connexion}
+setConnexion={setConnexion}
 
 
 
@@ -710,8 +715,8 @@ setConnection={setConnection}
 fullTraining={fullTraining}
 getTraining={getTraining}
 adminid={adminid}
-connection={connection}
-setConnection={setConnection}
+connexion={connexion}
+setConnexion={setConnexion}
 
 setDeleteTraining={setDeleteTraining}
 deleteOneTraining={deleteOneTraining}
@@ -737,13 +742,13 @@ setpassword={setpassword}
 
 inscriptionSubmit ={inscriptionSubmit}/>} />
 
-<Route path="/connection" element={ <Connection
+<Route path="/connexion" element={ <Connexion
 
 email={email}
 password={password}
 setemail={setemail}
 setpassword={setpassword}
-connectionSubmit={connectionSubmit}
+connexionSubmit={connexionSubmit}
 
 
 

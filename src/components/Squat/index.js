@@ -15,12 +15,18 @@ import { Link } from 'react-router-dom';
 
 
 const Squat = ({repSquat1, repSquat2, repSquat3, repSquat4, repSquat5, repSquat6, repSquat7, repSquat8, repSquat9, repSquat10,
+
 	serSquat1, serSquat2, serSquat3, serSquat4, serSquat5, serSquat6, serSquat7, serSquat8, serSquat9, serSquat10,
+
 setRepSquat1, setRepSquat2, setRepSquat3, setRepSquat4, setRepSquat5, setRepSquat6, setRepSquat7,setRepSquat8, setRepSquat9, setRepSquat10,
-setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSquat6, setSerSquat7, setSerSquat8, setSerSquat9, setSerSquat10, trainingSubmit, 
-connection, setConnection}) => {
+
+setSerSquat1, setSerSquat2, setSerSquat3, setSerSquat4, setSerSquat5, setSerSquat6, setSerSquat7, setSerSquat8, setSerSquat9, setSerSquat10, 
+
+trainingSubmit,connexion, setConnexion}) => {
+
 
 		const inputValue = (event) => {
+
 
 
 		const name = event.target.name;
@@ -35,7 +41,6 @@ connection, setConnection}) => {
 			  case 'repSquat2':
 				setRepSquat2(value)
 			  break;
-
 			  case 'repSquat3':
 				setRepSquat3(value)
 				console.log("coucou")
@@ -92,7 +97,6 @@ connection, setConnection}) => {
 			case 'serSquat10':
 				setSerSquat10(value)
 				break;
-
 			default:
 			  console.log('404');
 		  }
@@ -103,17 +107,17 @@ connection, setConnection}) => {
 	
 	return (
 	<div className="Squat">
-			<Header connection={connection}
-			setConnection={setConnection}/>
+			<Header connexion={connexion}
+			setConnexion={setConnexion}/>
 
 			<div class="container-fluid">
 
 			<form onSubmit={trainingSubmit}>
 
 <div className="row">
-			<div className="card m-2 col-md"  >
+			<div className="card m-1 col-md"  >
   <img src={squat1}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 	<label for="card1serie">nombre de série:</label>
   <input type="number" id="card1serie" value={serSquat1} name='serSquat1' className="w-75 m-auto" onChange={ inputValue }/>
@@ -124,9 +128,9 @@ connection, setConnection}) => {
   </div>
 </div>
 
-<div className="card m-2 col-md"  >
+<div className="card m-1 col-md"  >
   <img src={squat2}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
  
 
   <label for="card2serie">nombre de série:</label>
@@ -139,9 +143,9 @@ connection, setConnection}) => {
   </div>
 </div>
 
-<div className="card m-2 col-md"  >
+<div className="card m-1 col-md"  >
   <img src={squat3}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
   
  
   <label for="card3serie">nombre de série:</label>
@@ -153,9 +157,9 @@ connection, setConnection}) => {
   </div>
 </div>
 
-<div className="card m-2 col-md"  >
+<div className="card m-1 col-md"  >
   <img src={squat4}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 
   <label for="card4serie">nombre de série:</label>
@@ -170,9 +174,9 @@ connection, setConnection}) => {
 
 <div className="row">
 
-<div className="card m-2 col-md"  >
+<div className="card m-1 col-md"  >
   <img src={squat5}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
  
  
   <label for="card5serie">nombre de série:</label>
@@ -184,9 +188,9 @@ connection, setConnection}) => {
   </div>
 </div>
 
-<div className="card m-2 col-md"  >
+<div className="card m-1 col-md"  >
   <img src={squat6}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
   
   <label for="card6serie">nombre de série:</label>
   <input type="number" id="card6serie" value={serSquat6} name='serSquat6' className="w-75 m-auto" onChange={ inputValue }/>
@@ -197,9 +201,9 @@ connection, setConnection}) => {
   </div>
 </div>
 
-<div className="card m-2 col-md"  >
+<div className="card m-1 col-md"  >
   <img src={squat7}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
  
 
   <label for="card7serie">nombre de série:</label>
@@ -210,9 +214,9 @@ connection, setConnection}) => {
   </div>
 </div>
 
-<div className="card m-2 col-md"  >
+<div className="card m-1 col-md"  >
   <img src={squat8}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
 
 
   <label for="card8serie">nombre de série:</label>
@@ -228,9 +232,9 @@ connection, setConnection}) => {
 </div>
 
  <div className="row">
-<div className="card m-2 col-md-3"  >
+<div className="card m-1 col-md-3"  >
   <img src={squat9}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
   
 
   <label for="card9serie">nombre de série:</label>
@@ -242,9 +246,9 @@ connection, setConnection}) => {
   </div>
 </div>
 
-<div className="card m-2 col-md-3"  >
+<div className="card m-1 col-md-3"  >
   <img src={squat10}  className="card-img-top" alt="..."/>
-  <div className="card-body">
+  <div className="card-body input_bloc_center">
   
   <label for="card10serie">nombre de série:</label>
   <input type="number" id="card10serie" value={serSquat10} name='serSquat10' className="w-75 m-auto" onChange={ inputValue }/>
@@ -255,7 +259,8 @@ connection, setConnection}) => {
   </div>
 </div>
 
-<div className="d-flex justify-content-center m-5">
+<div className="d-flex justify-content-center m-5 exercice_all_button">
+
 
 <button type="submit" class="btn btn-primary btn-lg m-2">Enregistrer l'entrainement</button>
 <button type="button" class="btn btn-secondary btn-lg m-2"><Link to="/machine">Choisir d'autres éxercices</Link></button>
