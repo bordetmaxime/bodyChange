@@ -213,7 +213,7 @@ const connexionSubmit = (event) => {
 // req axios
 
 const register = async () => {
-	await axios.post('https://bodychange.herokuapp.com//admin', {
+	await axios.post('https://bodychange.herokuapp.com/admin', {
 		firstname,
 		lastname,		
 		email,
