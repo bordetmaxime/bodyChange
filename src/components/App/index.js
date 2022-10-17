@@ -213,7 +213,7 @@ const connexionSubmit = (event) => {
 // req axios
 
 const register = async () => {
-	await axios.post('http://localhost:5000/admin', {
+	await axios.post('http://localhost:3000/admin', {
 		firstname,
 		lastname,		
 		email,
@@ -226,13 +226,13 @@ const register = async () => {
 
 });
 };
-useEffect(() => {
+ useEffect(() => {
 getTraining()
-  });
+   });
 
 
 const getTraining = async () => {
-await axios.get(`http://localhost:5000/training/${adminid}`).then(response => {
+await axios.get(`http://localhost:3000/training/${adminid}`).then(response => {
 setfullTraining(response.data)
 		
 	})
@@ -245,7 +245,7 @@ setfullTraining(response.data)
 };
 
 const deleteOneTraining = async () => {
-	await axios.delete(`http://localhost:5000/training/${deleteTraining}`)
+	await axios.delete(`http://localhost:3000/training/${deleteTraining}`)
 	.then(response => {
      navigate(`/training/${adminid}`)
 	})
@@ -262,7 +262,7 @@ const deleteOneTraining = async () => {
 
 
 const login = async () => {
-	await axios.post('http://localhost:5000/admin/user', {
+	await axios.post('http://localhost:3000/admin/user', {
 		email,
 		password,
 
@@ -285,7 +285,7 @@ const login = async () => {
 
 
 const trainingPost = async () => {
-	await axios.post('http://localhost:5000/training', {
+	await axios.post('http://localhost:3000/training', {
 	adminid,
 
 	repDev1, repDev2,repDev3, repDev4,repDev5, repDev6, repDev7, repDev8, repDev9, repDev10, repDev11, repDev12, repDev13, repDev14, repDev15, repDev16,
