@@ -54,7 +54,7 @@ console.log(training.training_img),
 
 ))
 
-: <h2 className="text-center">Aucun exercice selectionner</h2>
+: <h2 className="text-center">Aucun exercice selectionné</h2>
 
 }
 

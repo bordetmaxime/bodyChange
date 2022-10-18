@@ -267,7 +267,7 @@ const login = async () => {
 		setConnexion(true);
 		setpassword('');
 		setadminid(response.data.admin_id)
-	    getTraining()
+	    getTraining
 		navigate('/menu')
 		
 	})

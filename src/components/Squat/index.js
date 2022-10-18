@@ -119,9 +119,9 @@ trainingSubmit,connexion, setConnexion}) => {
   <img src={squat1}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="card1serie">Nombre de série:</label>
+	<label for="card1serie">Nombre de séries:</label>
   <input type="number" id="card1serie" value={serSquat1} name='serSquat1' className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="card1rep">Nombre de répétion:</label>
+  <label for="card1rep">Nombre de répétions:</label>
     <input type="number" id="card1rep" value={repSquat1} name='repSquat1' className="w-75 m-auto" onChange={ inputValue }/>
 
 
@@ -133,9 +133,9 @@ trainingSubmit,connexion, setConnexion}) => {
   <div className="card-body input_bloc_center">
  
 
-  <label for="card2serie">Nombre de série:</label>
+  <label for="card2serie">Nombre de séries:</label>
   <input type="number" id="card2serie" value={serSquat2} name='serSquat2' className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="card2rep">Nombre de répétion:</label>
+  <label for="card2rep">Nombre de répétions:</label>
   <input type="number" id="card2rep" value={repSquat2} name='repSquat2'  className="w-75 m-auto" onChange={ inputValue }/>
   
  
@@ -148,9 +148,9 @@ trainingSubmit,connexion, setConnexion}) => {
   <div className="card-body input_bloc_center">
   
  
-  <label for="card3serie">Nombre de série:</label>
+  <label for="card3serie">Nombre de séries:</label>
   <input type="number" id="card3serie" value={serSquat3} name='serSquat3' className="w-75 m-auto" onChange={ inputValue }/>
- <label for="card3rep">Nombre de répétion:</label>
+ <label for="card3rep">Nombre de répétions:</label>
   <input type="number" id="card3rep" value={repSquat3} name='repSquat3' className="w-75 m-auto" onChange={ inputValue }/>
  
 
@@ -162,9 +162,9 @@ trainingSubmit,connexion, setConnexion}) => {
   <div className="card-body input_bloc_center">
 
 
-  <label for="card4serie">Nombre de série:</label>
+  <label for="card4serie">Nombre de séries:</label>
   <input type="number" id="card4serie" value={serSquat4} name='serSquat4' className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="card4rep">Nombre de répétion:</label>
+  <label for="card4rep">Nombre de répétions:</label>
   <input type="number" id="card4rep" value={repSquat4} name='repSquat4' className="w-75 m-auto" onChange={ inputValue }/>
 
 
@@ -179,9 +179,9 @@ trainingSubmit,connexion, setConnexion}) => {
   <div className="card-body input_bloc_center">
  
  
-  <label for="card5serie">Nombre de série:</label>
+  <label for="card5serie">Nombre de séries:</label>
   <input type="number" id="card5serie" value={serSquat5} name='serSquat5' className="w-75 m-auto" onChange={ inputValue }/>
- <label for="card5rep">Nombre de répétion:</label>
+ <label for="card5rep">Nombre de répétions:</label>
   <input type="number" id="card5rep" value={repSquat5} name='repSquat5' className="w-75 m-auto" onChange={ inputValue }/>
 
 
@@ -192,9 +192,9 @@ trainingSubmit,connexion, setConnexion}) => {
   <img src={squat6}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
   
-  <label for="card6serie">Nombre de série:</label>
+  <label for="card6serie">Nombre de séries:</label>
   <input type="number" id="card6serie" value={serSquat6} name='serSquat6' className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="card6rep">Nombre de répétion:</label>
+  <label for="card6rep">Nombre de répétions:</label>
   <input type="number" id="card6rep" value={repSquat6} name='repSquat6' className="w-75 m-auto" onChange={ inputValue }/>
 
 
@@ -206,9 +206,9 @@ trainingSubmit,connexion, setConnexion}) => {
   <div className="card-body input_bloc_center">
  
 
-  <label for="card7serie">Nombre de série:</label>
+  <label for="card7serie">Nombre de séries:</label>
   <input type="number" id="card7serie" value={serSquat7} name='serSquat7' className="w-75 m-auto" onChange={ inputValue }/>
- <label for="card7rep">Nombre de répétion:</label>
+ <label for="card7rep">Nombre de répétions:</label>
   <input type="number" id="card7rep" value={repSquat7} name='repSquat7' className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -219,9 +219,9 @@ trainingSubmit,connexion, setConnexion}) => {
   <div className="card-body input_bloc_center">
 
 
-  <label for="card8serie">Nombre de série:</label>
+  <label for="card8serie">Nombre de séries:</label>
   <input type="number" id="card8serie" value={serSquat8} name='serSquat8' className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="card8rep8">Nombre de répétion:</label>
+  <label for="card8rep8">Nombre de répétions:</label>
   <input type="number" id="card8rep" value={repSquat8} name='repSquat8' className="w-75 m-auto" onChange={ inputValue }/>
 
 
@@ -237,9 +237,9 @@ trainingSubmit,connexion, setConnexion}) => {
   <div className="card-body input_bloc_center">
   
 
-  <label for="card9serie">Nombre de série:</label>
+  <label for="card9serie">Nombre de séries:</label>
   <input type="number" id="card9serie" value={serSquat9} name='serSquat9' className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="card9rep">Nombre de répétion:</label>
+  <label for="card9rep">Nombre de répétions:</label>
   <input type="number" id="card9rep" value={repSquat9} name='repSquat9' className="w-75 m-auto" onChange={ inputValue }/>
 
 
@@ -250,9 +250,9 @@ trainingSubmit,connexion, setConnexion}) => {
   <img src={squat10}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
   
-  <label for="card10serie">Nombre de série:</label>
+  <label for="card10serie">Nombre de séries:</label>
   <input type="number" id="card10serie" value={serSquat10} name='serSquat10' className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="card10rep">Nombre de répétion:</label>
+  <label for="card10rep">Nombre de répétions:</label>
   <input type="number" id="card10rep" value={repSquat10} name='repSquat10' className="w-75 m-auto" onChange={ inputValue }/>
 
 </div>
@@ -263,7 +263,7 @@ trainingSubmit,connexion, setConnexion}) => {
 
 
 <button type="submit" class="btn btn-primary btn-lg m-2 btn_responsive_size">Enregistrer l'entrainement</button>
-<button type="button" class="btn btn-secondary btn-lg m-2 btn_responsive_size"><Link to="/machine">Choisir d'autres éxercices</Link></button>
+<button type="button" class="btn btn-secondary btn-lg m-2 btn_responsive_size"><Link to="/machine">Choisir d'autres exercices</Link></button>
 <a href="#" className="back_start"><Link to="/machine">Retour</Link></a>
 </div>
 

@@ -214,10 +214,10 @@ setConnexion={setConnexion}/>
   <img src={dev1}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev1">Nombre de série:</label>
+	<label for="cardserDev1">Nombre de séries:</label>
   <input type="number" id="cardserDev1"  value={serDev1} name="serDev1" className="w-75 m-auto" onChange={ inputValue }/>
 
-  <label for="cardrepDev1">Nombre de répétion:</label>
+  <label for="cardrepDev1">Nombre de répétions:</label>
     <input type="number" id="cardrepDev1" value={repDev1} name="repDev1" className="w-75 m-auto" onChange={ inputValue }/>
   </div>
 </div>
@@ -226,9 +226,9 @@ setConnexion={setConnexion}/>
 <div className="card m-2 col-md"  >
   <img src={dev2}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
-<label for="cardserDev2">Nombre de série:</label>
+<label for="cardserDev2">Nombre de séries:</label>
   <input type="number" id="cardserDev2" value={serDev2} name="serDev2" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev2">Nombre de répétion:</label>
+  <label for="cardrepDev2">Nombre de répétions:</label>
     <input type="number" id="cardrepDev2" value={repDev2} name="repDev2" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -239,9 +239,9 @@ setConnexion={setConnexion}/>
   <img src={dev3}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev3">Nombre de série:</label>
+	<label for="cardserDev3">Nombre de séries:</label>
   <input type="number" id="cardserDev3" value={serDev3} name="serDev3" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev3">Nombre de répétion:</label>
+  <label for="cardrepDev3">Nombre de répétions:</label>
     <input type="number" id="cardrepDev3" value={repDev3} name="repDev3" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -252,9 +252,9 @@ setConnexion={setConnexion}/>
   <img src={dev4}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
  
-	<label for="cardserDev4">Nombre de série:</label>
+	<label for="cardserDev4">Nombre de séries:</label>
   <input type="number" id="cardserDev4"  value={serDev4} name="serDev4" className="w-75 m-auto" onChange={ inputValue }/>
- <label for="cardrepDev4">Nombre de répétion:</label>
+ <label for="cardrepDev4">Nombre de répétions:</label>
     <input type="number" id="cardrepDev4" value={repDev4} name="repDev4" className="w-75 m-auto" onChange={ inputValue }/>
  
   </div>
@@ -268,9 +268,9 @@ setConnexion={setConnexion}/>
   <img src={dev5}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev5">Nombre de série:</label>
+	<label for="cardserDev5">Nombre de séries:</label>
   <input type="number" id="cardserDev5"  value={serDev5} name="serDev5" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev5">Nombre de répétion:</label>
+  <label for="cardrepDev5">Nombre de répétions:</label>
     <input type="number" id="cardrepDev5" value={repDev5} name="repDev5" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -281,9 +281,9 @@ setConnexion={setConnexion}/>
   <img src={dev6}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
  
-	<label for="cardserDev6">Nombre de série:</label>
+	<label for="cardserDev6">Nombre de séries:</label>
   <input type="number" id="cardserDev6"  value={serDev6} name="serDev6"  className="w-75 m-auto" onChange={ inputValue }/>
- <label for="cardrepDev6">Nombre de répétion:</label>
+ <label for="cardrepDev6">Nombre de répétions:</label>
     <input type="number" id="cardrepDev6" value={repDev6} name="repDev6" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -294,9 +294,9 @@ setConnexion={setConnexion}/>
   <img src={dev7}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
   
-	<label for="cardserDev7">Nombre de série:</label>
+	<label for="cardserDev7">Nombre de séries:</label>
   <input type="number" id="cardserDev7" value={serDev7} name="serDev7" className="w-75 m-auto" onChange={ inputValue }/>
-<label for="cardrepDev7">Nombre de répétion:</label>
+<label for="cardrepDev7">Nombre de répétions:</label>
     <input type="number" id="cardrepDev7"  value={repDev7} name="repDev7" className="w-75 m-auto" onChange={ inputValue }/>
  
   </div>
@@ -307,9 +307,9 @@ setConnexion={setConnexion}/>
   <img src={dev8}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev8">Nombre de série:</label>
+	<label for="cardserDev8">Nombre de séries:</label>
   <input type="number" id="cardserDev8" value={serDev8} name="serDev8" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev8">Nombre de répétion:</label>
+  <label for="cardrepDev8">Nombre de répétions:</label>
     <input type="number" id="cardrepDev8"  value={repDev8} name="repDev8" className="w-75 m-auto" onChange={ inputValue } />
 
   </div>
@@ -324,9 +324,9 @@ setConnexion={setConnexion}/>
   <img src={dev9}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev9">Nombre de série:</label>
+	<label for="cardserDev9">Nombre de séries:</label>
   <input type="number" id="cardserDev9" value={serDev9} name="serDev9" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev9">Nombre de répétion:</label>
+  <label for="cardrepDev9">Nombre de répétions:</label>
     <input type="number" id="cardrepDev9"  value={repDev9} name="repDev9" className="w-75 m-auto" onChange={ inputValue }/>
  
   </div>
@@ -337,9 +337,9 @@ setConnexion={setConnexion}/>
   <img src={dev10}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev10">Nombre de série:</label>
+	<label for="cardserDev10">Nombre de séries:</label>
   <input type="number" id="cardserDev10"  value={serDev10} name="serDev10" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev10">Nombre de répétion:</label>
+  <label for="cardrepDev10">Nombre de répétions:</label>
     <input type="number" id="cardrepDev10" value={repDev10} name="repDev10" className="w-75 m-auto" onChange={ inputValue }/>
  
   </div>
@@ -350,9 +350,9 @@ setConnexion={setConnexion}/>
   <img src={dev11}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev11">Nombre de série:</label>
+	<label for="cardserDev11">Nombre de séries:</label>
   <input type="number" id="cardserDev11"  value={serDev11} name="serDev11" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev11">Nombre de répétion:</label>
+  <label for="cardrepDev11">Nombre de répétions:</label>
     <input type="number" id="cardrepDev11" value={repDev11} name="repDev11" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -363,9 +363,9 @@ setConnexion={setConnexion}/>
   <img src={dev12}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev12">Nombre de série:</label>
+	<label for="cardserDev12">Nombre de séries:</label>
   <input type="number" id="cardserDev12" value={serDev12} name="serDev12" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev12">Nombre de répétion:</label>
+  <label for="cardrepDev12">Nombre de répétions:</label>
     <input type="number" id="cardrepDev12" value={repDev12} name="repDev12" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -381,9 +381,9 @@ setConnexion={setConnexion}/>
   <img src={dev13}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev13">Nombre de série:</label>
+	<label for="cardserDev13">Nombre de séries:</label>
   <input type="number" id="cardserDev13" value={serDev13} name="serDev13" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev13">Nombre de répétion:</label>
+  <label for="cardrepDev13">Nombre de répétions:</label>
     <input type="number" id="cardrepDev13" value={repDev13} name="repDev13" className="w-75 m-auto" onChange={ inputValue }/>
  
   </div>
@@ -394,9 +394,9 @@ setConnexion={setConnexion}/>
   <img src={dev14}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev14">Nombre de série:</label>
+	<label for="cardserDev14">Nombre de séries:</label>
   <input type="number" id="cardserDev14" value={serDev14} name="serDev14" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev14">Nombre de répétion:</label>
+  <label for="cardrepDev14">Nombre de répétions:</label>
     <input type="number" id="cardrepDev14" value={repDev14} name="repDev14" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -407,9 +407,9 @@ setConnexion={setConnexion}/>
   <img src={dev15}  className="card-img-top" alt="..." />
   <div className="card-body input_bloc_center">
   
-	<label for="cardserDev15">Nombre de série:</label>
+	<label for="cardserDev15">Nombre de séries:</label>
   <input type="number" id="cardserDev15" value={serDev15} name="serDev15" className="w-75 m-auto" onChange={ inputValue }/>
-<label for="cardrepDev15">Nombre de répétion:</label>
+<label for="cardrepDev15">Nombre de répétions:</label>
     <input type="number" id="cardrepDev15"  value={repDev15} name="repDev15" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -420,9 +420,9 @@ setConnexion={setConnexion}/>
   <img src={dev16}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev16">Nombre de série:</label>
+	<label for="cardserDev16">Nombre de séries:</label>
   <input type="number" id="cardserDev16"  value={serDev16} name="serDev16" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev16">Nombre de répétion:</label>
+  <label for="cardrepDev16">Nombre de répétions:</label>
     <input type="number" id="cardrepDev16" value={repDev16} name="repDev16" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -437,9 +437,9 @@ setConnexion={setConnexion}/>
   <img src={dev17}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev17">Nombre de série:</label>
+	<label for="cardserDev17">Nombre de séries:</label>
   <input type="number" id="cardserDev17" value={serDev17} name="serDev17" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev17">Nombre de répétion:</label>
+  <label for="cardrepDev17">Nombre de répétions:</label>
     <input type="number" id="cardrepDev17" value={repDev17} name="repDev17" className="w-75 m-auto" onChange={ inputValue }/>
  
   </div>
@@ -450,9 +450,9 @@ setConnexion={setConnexion}/>
   <img src={dev18}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev18">Nombre de série:</label>
+	<label for="cardserDev18">Nombre de séries:</label>
   <input type="number" id="cardserDev18" value={serDev18} name="serDev18" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev18">Nombre de répétion:</label>
+  <label for="cardrepDev18">Nombre de répétions:</label>
     <input type="number" id="cardrepDev18"  value={repDev18} name="repDev18" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -463,9 +463,9 @@ setConnexion={setConnexion}/>
   <img src={dev19}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev19">Nombre de série:</label>
+	<label for="cardserDev19">Nombre de séries:</label>
   <input type="number" id="cardserDev19"  value={serDev19} name="serDev19"  className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev19">Nombre de répétion:</label>
+  <label for="cardrepDev19">Nombre de répétions:</label>
     <input type="number" id="cardrepDev19" value={repDev19} name="repDev19" className="w-75 m-auto" onChange={ inputValue }/>
  
   </div>
@@ -476,9 +476,9 @@ setConnexion={setConnexion}/>
   <img src={dev20}  className="card-img-top" alt="..." />
   <div className="card-body input_bloc_center">
   
-	<label for="cardserDev20">Nombre de série:</label>
+	<label for="cardserDev20">Nombre de séries:</label>
   <input type="number" id="cardserDev20"  value={serDev20} name="serDev20" className="w-75 m-auto" onChange={ inputValue }/>
-<label for="cardrepDev20">Nombre de répétion:</label>
+<label for="cardrepDev20">Nombre de répétions:</label>
     <input type="number" id="cardrepDev20"  value={repDev20} name="repDev20" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -492,9 +492,9 @@ setConnexion={setConnexion}/>
   <img src={dev21}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev21">Nombre de série:</label>
+	<label for="cardserDev21">Nombre de séries:</label>
   <input type="number" id="cardserDev21" value={serDev21} name="serDev21" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev21">Nombre de répétion:</label>
+  <label for="cardrepDev21">Nombre de répétions:</label>
     <input type="number" id="cardrepDev21" value={repDev21} name="repDev21" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -505,9 +505,9 @@ setConnexion={setConnexion}/>
   <img src={dev22}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev22">Nombre de série:</label>
+	<label for="cardserDev22">Nombre de séries:</label>
   <input type="number" id="cardserDev22" value={serDev22} name="serDev22"  className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev22">Nombre de répétion:</label>
+  <label for="cardrepDev22">Nombre de répétions:</label>
     <input type="number" id="cardrepDev22" value={repDev22} name="repDev22" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -518,9 +518,9 @@ setConnexion={setConnexion}/>
   <img src={dev23}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserDev23">Nombre de série:</label>
+	<label for="cardserDev23">Nombre de séries:</label>
   <input type="number" id="cardserDev23" value={serDev23} name="serDev23" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev23">Nombre de répétion:</label>
+  <label for="cardrepDev23">Nombre de répétions:</label>
     <input type="number" id="cardrepDev23"  value={repDev23} name="repDev23" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -532,9 +532,9 @@ setConnexion={setConnexion}/>
   <div className="card-body input_bloc_center">
 
 
-	<label for="cardserDev24">Nombre de série:</label>
+	<label for="cardserDev24">Nombre de séries:</label>
   <input type="number" id="cardserDev24"  value={serDev24} name="serDev24" className="w-75 m-auto" onChange={ inputValue }/>
-  <label for="cardrepDev24">Nombre de répétion:</label>
+  <label for="cardrepDev24">Nombre de répétions:</label>
     <input type="number" id="cardrepDev24" value={repDev24} name="repDev24" className="w-75 m-auto" onChange={ inputValue }/>
 
   </div>
@@ -545,7 +545,7 @@ setConnexion={setConnexion}/>
 <div className="d-flex justify-content-center m-5 exercice_all_button">
 
 <button type="submit" class="btn btn-primary btn-lg m-2 btn_responsive_size">Enregistrer l'entrainement</button>
-<button type="button" class="btn btn-secondary btn-lg m-2 btn_responsive_size"><Link to="/machine">Choisir d'autres éxercices</Link></button>
+<button type="button" class="btn btn-secondary btn-lg m-2 btn_responsive_size"><Link to="/machine">Choisir d'autres exercices</Link></button>
 <a href="#" className="back_start"><Link to="/machine">Retour</Link></a>
 
 </div>

@@ -15,7 +15,7 @@ const Home = () => {
 		<ul class="list-group m-auto">  
       <span class="badge badge-info badge-pill">1</span>
   <li class="list-group-item d-flex justify-content-center align-items-center text-center">
-   Ajouter vos machines
+   Ajoutez vos machines
 
   </li>
 
@@ -26,7 +26,7 @@ const Home = () => {
   </li> 
     <span class="badge badge-info badge-pill">3</span>
   <li class="list-group-item d-flex justify-content-center align-items-center text-center ">
-Consulter votre entrainement
+Consultez votre entrainement
  
   </li>
 </ul>
