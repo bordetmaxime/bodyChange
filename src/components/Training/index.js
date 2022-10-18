@@ -32,7 +32,9 @@ navigate(`/training/${adminid}`)
 
 <div class="container-fluid d-flex justify-content-center flex-wrap all_card">
 
-{fullTraining.map((training) => (
+{fullTraining.length > 0 ? 
+
+fullTraining.map((training) => (
 	
 
 console.log(training.training_img),
@@ -50,12 +52,19 @@ console.log(training.training_img),
  
 </div> 
 
-))}
+))
+
+: <h2 className="text-center">Aucun exercice selectionner</h2>
+
+}
+
 
 
 
 </div>
-<div className="div_btn_home"><a class="btn_home" href="#"><Link to="/start">Choisir d'autres exercices</Link></a></div>
+<div className="div_btn_home"><a class="btn_home" href="#"><Link to="/machine">Choisir d'autres exercices</Link></a>
+
+</div>
 </div>
 
 		

@@ -7,7 +7,7 @@ import Haltere from '../../assets/haltere.jpg';
 import { Link } from 'react-router-dom';
 
 
-const Machine = ({developpe, guide, squat, haltere, connexion, setConnexion}) => {
+const Machine = ({connexion, setConnexion}) => {
 
 	
 	return ( 
@@ -15,13 +15,13 @@ const Machine = ({developpe, guide, squat, haltere, connexion, setConnexion}) =>
 			<Header connexion={connexion}
 			setConnexion={setConnexion}/>
 	<div className="container-fluid">
-	<h1 className="title-machine">Mes machines : </h1>
+	<h1 className="title-machine">Machine disponible : </h1>
 	<div className="d-flex justify-content-center flex-wrap">
 
-	{developpe === true ? <div className="d-flex flex-column m-2"><img className="img_select_exercice" src={Developpe} /> <button className="btn_select_exercice"><Link to="/developpe">Selectionner les exercices</Link></button></div> : ' '}
-	{guide === true ? <div className="d-flex flex-column m-2"><img  className="img_select_exercice" src={Guide} /><button className="btn_select_exercice"><Link to="/guide">Selectionner les exercices</Link></button></div> : ' '}
-	{squat === true ? <div className="d-flex flex-column m-2"><img  className="img_select_exercice" src={Squat} /><button className="btn_select_exercice"><Link to="/squat">Selectionner les exercices</Link></button></div>  : ' '}
-	{haltere === true ? <div className="d-flex flex-column m-2"><img className="img_select_exercice" src={Haltere} /><button className="btn_select_exercice"><Link to="/haltere">Selectionner les exercices</Link></button></div>  : ' '}
+	<div className="d-flex flex-column m-2"><img className="img_select_exercice" src={Developpe} /> <button className="btn_select_exercice"><Link to="/developpe">Selectionner les exercices</Link></button></div>
+	<div className="d-flex flex-column m-2"><img  className="img_select_exercice" src={Guide} /><button className="btn_select_exercice"><Link to="/guide">Selectionner les exercices</Link></button></div>
+	<div className="d-flex flex-column m-2"><img  className="img_select_exercice" src={Squat} /><button className="btn_select_exercice"><Link to="/squat">Selectionner les exercices</Link></button></div>
+	<div className="d-flex flex-column m-2"><img className="img_select_exercice" src={Haltere} /><button className="btn_select_exercice"><Link to="/haltere">Selectionner les exercices</Link></button></div>
 	</div>
 	</div>
 	</div>

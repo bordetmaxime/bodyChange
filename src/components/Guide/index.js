@@ -179,9 +179,9 @@ setConnexion={setConnexion} />
   <img src={guide1}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide1">nombre de série:</label>
+	<label for="cardserGuide1">Nombre de série:</label>
   <input type="number" id="cardserGuide1"  value={serGuide1} name="serGuide1" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide1">nombre de répétion:</label>
+  <label for="cardrepGuide1">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide1"  value={repGuide1} name="repGuide1" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -192,9 +192,9 @@ setConnexion={setConnexion} />
   <img src={guide2}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide2">nombre de série:</label>
+	<label for="cardserGuide2">Nombre de série:</label>
   <input type="number" id="cardserGuide2"  value={serGuide2} name="serGuide2" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide2">nombre de répétion:</label>
+  <label for="cardrepGuide2">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide2"  value={repGuide2} name="repGuide2" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -207,9 +207,9 @@ setConnexion={setConnexion} />
   <img src={guide3}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide1">nombre de série:</label>
+	<label for="cardserGuide1">Nombre de série:</label>
   <input type="number" id="cardserGuide3"  value={serGuide3} name="serGuide3" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide3">nombre de répétion:</label>
+  <label for="cardrepGuide3">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide3"  value={repGuide3} name="repGuide3" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -225,9 +225,9 @@ setConnexion={setConnexion} />
   <img src={guide4}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide4">nombre de série:</label>
+	<label for="cardserGuide4">Nombre de série:</label>
   <input type="number" id="cardserGuide4"  value={serGuide4} name="serGuide4" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide4">nombre de répétion:</label>
+  <label for="cardrepGuide4">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide4"  value={repGuide4} name="repGuide4" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -241,9 +241,9 @@ setConnexion={setConnexion} />
   <img src={guide5}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide5">nombre de série:</label>
+	<label for="cardserGuide5">Nombre de série:</label>
   <input type="number" id="cardserGuide5"  value={serGuide5} name="serGuide5" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide5">nombre de répétion:</label>
+  <label for="cardrepGuide5">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide5"  value={repGuide5} name="repGuide5" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -255,9 +255,9 @@ setConnexion={setConnexion} />
   <img src={guide6}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide6">nombre de série:</label>
+	<label for="cardserGuide6">Nombre de série:</label>
   <input type="number" id="cardserGuide6"  value={serGuide6} name="serGuide6" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide6">nombre de répétion:</label>
+  <label for="cardrepGuide6">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide6"  value={repGuide6} name="repGuide6" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -269,9 +269,9 @@ setConnexion={setConnexion} />
   <img src={guide7}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide7">nombre de série:</label>
+	<label for="cardserGuide7">Nombre de série:</label>
   <input type="number" id="cardserGuide7"  value={serGuide7} name="serGuide7" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide7">nombre de répétion:</label>
+  <label for="cardrepGuide7">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide7"  value={repGuide7} name="repGuide7" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -283,9 +283,9 @@ setConnexion={setConnexion} />
   <img src={guide8}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide8">nombre de série:</label>
+	<label for="cardserGuide8">Nombre de série:</label>
   <input type="number" id="cardserGuide8"  value={serGuide8} name="serGuide8" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide1">nombre de répétion:</label>
+  <label for="cardrepGuide1">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide8"  value={repGuide8} name="repGuide8" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -299,9 +299,9 @@ setConnexion={setConnexion} />
   <img src={guide9}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide9">nombre de série:</label>
+	<label for="cardserGuide9">Nombre de série:</label>
   <input type="number" id="cardserGuide9"  value={serGuide9} name="serGuide9" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide9">nombre de répétion:</label>
+  <label for="cardrepGuide9">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide9"  value={repGuide9} name="repGuide9" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -313,9 +313,9 @@ setConnexion={setConnexion} />
   <img src={guide10}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide10">nombre de série:</label>
+	<label for="cardserGuide10">Nombre de série:</label>
   <input type="number" id="cardserGuide10"  value={serGuide10} name="serGuide10" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide10">nombre de répétion:</label>
+  <label for="cardrepGuide10">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide10"  value={repGuide10} name="repGuide10" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -327,9 +327,9 @@ setConnexion={setConnexion} />
   <img src={guide11}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide11">nombre de série:</label>
+	<label for="cardserGuide11">Nombre de série:</label>
   <input type="number" id="cardserGuide11"  value={serGuide11} name="serGuide11" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide11">nombre de répétion:</label>
+  <label for="cardrepGuide11">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide11"  value={repGuide11} name="repGuide11" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -341,9 +341,9 @@ setConnexion={setConnexion} />
   <img src={guide12}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide12">nombre de série:</label>
+	<label for="cardserGuide12">Nombre de série:</label>
   <input type="number" id="cardserGuide12"  value={serGuide12} name="serGuide12" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide12">nombre de répétion:</label>
+  <label for="cardrepGuide12">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide12"  value={repGuide12} name="repGuide12" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -358,9 +358,9 @@ setConnexion={setConnexion} />
   <img src={guide13}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide13">nombre de série:</label>
+	<label for="cardserGuide13">Nombre de série:</label>
   <input type="number" id="cardserGuide13"  value={serGuide13} name="serGuide13" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide13">nombre de répétion:</label>
+  <label for="cardrepGuide13">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide13"  value={repGuide13} name="repGuide13" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -372,9 +372,9 @@ setConnexion={setConnexion} />
   <img src={guide14}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide14">nombre de série:</label>
+	<label for="cardserGuide14">Nombre de série:</label>
   <input type="number" id="cardserGuide14"  value={serGuide14} name="serGuide14" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide14">nombre de répétion:</label>
+  <label for="cardrepGuide14">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide14"  value={repGuide14} name="repGuide14" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -384,9 +384,9 @@ setConnexion={setConnexion} />
   <img src={guide15}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide15">nombre de série:</label>
+	<label for="cardserGuide15">Nombre de série:</label>
   <input type="number" id="cardserGuide15"  value={serGuide15} name="serGuide15" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide15">nombre de répétion:</label>
+  <label for="cardrepGuide15">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide15"  value={repGuide15} name="repGuide15" className="w-75 m-auto" onChange={inputValue}/>	
 
  
@@ -400,9 +400,9 @@ setConnexion={setConnexion} />
   <img src={guide16}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide16">nombre de série:</label>
+	<label for="cardserGuide16">Nombre de série:</label>
   <input type="number" id="cardserGuide16"  value={serGuide16} name="serGuide16" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide16">nombre de répétion:</label>
+  <label for="cardrepGuide16">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide16"  value={repGuide16} name="repGuide16" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -417,9 +417,9 @@ setConnexion={setConnexion} />
   <img src={guide17}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide17">nombre de série:</label>
+	<label for="cardserGuide17">Nombre de série:</label>
   <input type="number" id="cardserGuide17"  value={serGuide17} name="serGuide17" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide17">nombre de répétion:</label>
+  <label for="cardrepGuide17">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide17"  value={repGuide17} name="repGuide17" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -431,9 +431,9 @@ setConnexion={setConnexion} />
   <img src={guide18}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide18">nombre de série:</label>
+	<label for="cardserGuide18">Nombre de série:</label>
   <input type="number" id="cardserGuide18"  value={serGuide18} name="serGuide18" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide18">nombre de répétion:</label>
+  <label for="cardrepGuide18">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide18"  value={repGuide18} name="repGuide18" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -444,9 +444,9 @@ setConnexion={setConnexion} />
   <img src={guide20}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide20">nombre de série:</label>
+	<label for="cardserGuide20">Nombre de série:</label>
   <input type="number" id="cardserGuide20"  value={serGuide20} name="serGuide20" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide20">nombre de répétion:</label>
+  <label for="cardrepGuide20">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide20"  value={repGuide20} name="repGuide20" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -456,9 +456,9 @@ setConnexion={setConnexion} />
   <img src={guide21}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 	  
-	<label for="cardserGuide21">nombre de série:</label>
+	<label for="cardserGuide21">Nombre de série:</label>
   <input type="number" id="cardserGuide21"  value={serGuide21} name="serGuide21" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepGuide21">nombre de répétion:</label>
+  <label for="cardrepGuide21">Nombre de répétion:</label>
     <input type="number" id="cardrepGuide21"  value={repGuide21} name="repGuide21" className="w-75 m-auto" onChange={inputValue}/>	
 
   </div>
@@ -469,6 +469,7 @@ setConnexion={setConnexion} />
 <div className="d-flex justify-content-center m-5 exercice_all_button">
 <button type="submit" class="btn btn-primary btn-lg m-2">Enregistrer l'entrainement</button>
 <button type="button" class="btn btn-secondary btn-lg m-2"><Link to="/machine">Choisir d'autres éxercices</Link></button>
+<a href="#" className="back_start"><Link to="/machine">Retour</Link></a>
 
 </div>
 

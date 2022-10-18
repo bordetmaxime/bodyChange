@@ -6,7 +6,7 @@ import axios from 'axios';
 import './styles.css';
 
 import Home from '../Home';
-import Start from '../Start';
+
 import Machine from '../Machine';
 import Squat from '../Squat';
 import Developpe from '../Developpe';
@@ -37,15 +37,10 @@ const App = () => {
 	const [adminid, setadminid] = useState()
 	const [fullTraining, setfullTraining] = useState('')
 	const [deleteTraining, setDeleteTraining] = useState()
+	const [inscriptionValidate, setInscriptionValidate] = useState(false)
 	
 
-	const [ squat, setSquat] = useState(false);
-	const [ developpe, setDeveloppe] = useState(false);
-	const [ guide, setGuide] = useState(false);
-	const [ haltere, setHaltere] = useState(false);
-
-
-	const [repSquat1, setRepSquat1] = useState();
+    const [repSquat1, setRepSquat1] = useState();
 	const [repSquat2, setRepSquat2] = useState();
 	const [repSquat3, setRepSquat3] = useState();
 	const [repSquat4, setRepSquat4] = useState();
@@ -220,6 +215,7 @@ const register = async () => {
 		password,
 
 	}).then(response => {
+		setInscriptionValidate(true)
 		navigate('/connexion');
 	})
 .catch(error => {
@@ -325,26 +321,6 @@ const trainingPost = async () => {
   
 };
 
-	const changeState = (event) =>{
-		const machine = event.target.value;
-		
-		switch(machine){
-		case 'squat':
-			setSquat(true)
-			break;
-		case 'developpe':
-			setDeveloppe(true)
-			break;
-		case 'guide':
-			setGuide(true)
-			break;
-			case 'haltere':
-			setHaltere(true)
-			break;
-		default:
-			console.log("404")
-		}
-	};
 
 	
 
@@ -359,12 +335,7 @@ const trainingPost = async () => {
 
 			 <Routes>
 
-			 <Route path="/start" element={
-
-		       <Start 
-				changeState={changeState}			
-				
-				/> } />
+	
 
 
 <Route path="/menu" element={ <Menu
@@ -379,12 +350,10 @@ setConnexion={setConnexion}
 
 <Route path="/machine" element={ <Machine
 
-  squat={squat}
+
   connexion={connexion}
   setConnexion={setConnexion}
-  developpe={developpe}
-  guide={guide}
-  haltere={haltere}
+ 
 
 
 />}/>
@@ -749,6 +718,7 @@ password={password}
 setemail={setemail}
 setpassword={setpassword}
 connexionSubmit={connexionSubmit}
+inscriptionValidate={inscriptionValidate}
 
 
 

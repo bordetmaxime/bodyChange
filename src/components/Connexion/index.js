@@ -1,7 +1,7 @@
 import Header from '../Header';
 import './styles.scss';
 
-const Connexion = ({email, password, connexionSubmit, setpassword, setemail}) => {
+const Connexion = ({email, password, connexionSubmit, setpassword, setemail, inscriptionValidate}) => {
 
 	const inputValue = (event) => {
 		switch (event.target.name) {
@@ -24,6 +24,8 @@ const Connexion = ({email, password, connexionSubmit, setpassword, setemail}) =>
 <Header/>
 
 <div className="container">
+
+{inscriptionValidate ? <h2 className="text-center m-2">Inscription validée</h2> : ' '}
 
 <form className="d-flex flex-column m-auto " onSubmit={connexionSubmit}>
 

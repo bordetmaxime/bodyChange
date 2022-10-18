@@ -137,9 +137,9 @@ setConnexion={setConnexion} />
 			<div className="card m-2 col-md"  >
   <img src={haltere1}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
-	<label for="cardserHaltere1">nombre de série:</label>
+	<label for="cardserHaltere1">Nombre de série:</label>
   <input type="number" id="cardserHaltere1" value={serHaltere1} name="serHaltere1"  className="w-75 m-auto" onChange={inputValue} />
- <label for="cardrepHaltere1">nombre de répétion:</label>
+ <label for="cardrepHaltere1">Nombre de répétion:</label>
     <input type="number" id="cardrepHaltere1"  value={repHaltere1} name="repHaltere1" className="w-75 m-auto" onChange={inputValue}/>
 
   </div>
@@ -149,9 +149,9 @@ setConnexion={setConnexion} />
   <img src={haltere2}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserHaltere2">nombre de série:</label>
+	<label for="cardserHaltere2">Nombre de série:</label>
   <input type="number" id="cardserHaltere2"  value={serHaltere2} name="serHaltere2"  className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepHaltere2">nombre de répétion:</label>
+  <label for="cardrepHaltere2">Nombre de répétion:</label>
     <input type="number" id="cardrepHaltere2" value={repHaltere2} name="repHaltere2" className="w-75 m-auto" onChange={inputValue}/>
 
   </div>
@@ -161,9 +161,9 @@ setConnexion={setConnexion} />
   <img src={haltere3}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserHaltere3">nombre de série:</label>
+	<label for="cardserHaltere3">Nombre de série:</label>
   <input type="number" id="cardserHaltere3"  value={serHaltere3} name="serHaltere3" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepHaltere3">nombre de répétion:</label>
+  <label for="cardrepHaltere3">Nombre de répétion:</label>
     <input type="number" id="cardrepHaltere3" value={repHaltere3} name="repHaltere3" className="w-75 m-auto" onChange={inputValue}/>
 	
   </div>
@@ -173,9 +173,9 @@ setConnexion={setConnexion} />
   <img src={haltere4}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserHaltere4">nombre de série:</label>
+	<label for="cardserHaltere4">Nombre de série:</label>
   <input type="number" id="cardserHaltere4" value={serHaltere4} name="serHaltere4" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepHaltere4">nombre de répétion:</label>
+  <label for="cardrepHaltere4">Nombre de répétion:</label>
     <input type="number" id="cardrepHaltere4" value={repHaltere4} name="repHaltere4" className="w-75 m-auto" onChange={inputValue}/>
 
   </div>
@@ -189,9 +189,9 @@ setConnexion={setConnexion} />
   <img src={haltere5}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserHaltere5">nombre de série:</label>
+	<label for="cardserHaltere5">Nombre de série:</label>
   <input type="number" id="cardserHaltere5" value={serHaltere5} name="serHaltere5" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardepHaltere5">nombre de répétion:</label>
+  <label for="cardepHaltere5">Nombre de répétion:</label>
     <input type="number" id="cardepHaltere5" value={repHaltere5} name="repHaltere5" className="w-75 m-auto" onChange={inputValue}/>
 
   </div>
@@ -201,9 +201,9 @@ setConnexion={setConnexion} />
   <img src={haltere6}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserHaltere6">nombre de série:</label>
+	<label for="cardserHaltere6">Nombre de série:</label>
   <input type="number" id="cardserHaltere6" value={serHaltere6} name="serHaltere6" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepHaltere6">nombre de répétion:</label>
+  <label for="cardrepHaltere6">Nombre de répétion:</label>
     <input type="number" id="cardrepHaltere6" value={repHaltere6} name="repHaltere6" className="w-75 m-auto" onChange={inputValue}/>
 
    </div>
@@ -213,9 +213,9 @@ setConnexion={setConnexion} />
   <img src={haltere7}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserHaltere7">nombre de série:</label>
+	<label for="cardserHaltere7">Nombre de série:</label>
   <input type="number" id="cardserHaltere7" value={serHaltere7} name="serHaltere7" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepHaltere7">nombre de répétion:</label>
+  <label for="cardrepHaltere7">Nombre de répétion:</label>
     <input type="number" id="cardrepHaltere7" value={repHaltere7} name="repHaltere7" className="w-75 m-auto" onChange={inputValue}/>
 
    </div>
@@ -225,9 +225,9 @@ setConnexion={setConnexion} />
   <img src={haltere8}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserHaltere8">nombre de série:</label>
+	<label for="cardserHaltere8">Nombre de série:</label>
   <input type="number" id="cardserHaltere8" value={serHaltere8} name="serHaltere8" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepHaltere8">nombre de répétion:</label>
+  <label for="cardrepHaltere8">Nombre de répétion:</label>
     <input type="number" id="cardrepHaltere8" value={repHaltere8} name="repHaltere8" className="w-75 m-auto" onChange={inputValue}/>
 
   </div>
@@ -240,9 +240,9 @@ setConnexion={setConnexion} />
   <img src={haltere9}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserHaltere9">nombre de série:</label>
+	<label for="cardserHaltere9">Nombre de série:</label>
   <input type="number" id="cardserHaltere9" value={serHaltere9} name="serHaltere9" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepHaltere9">nombre de répétion:</label>
+  <label for="cardrepHaltere9">Nombre de répétion:</label>
     <input type="number" id="repHaltere9"  value={repHaltere9} name="repHaltere9" className="w-75 m-auto" onChange={inputValue}/>
 
   </div>
@@ -252,9 +252,9 @@ setConnexion={setConnexion} />
   <img src={haltere10}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserHaltere10">nombre de série:</label>
+	<label for="cardserHaltere10">Nombre de série:</label>
   <input type="number" id="cardserHaltere10" value={serHaltere10} name="serHaltere10" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepHaltere10">nombre de répétion:</label>
+  <label for="cardrepHaltere10">Nombre de répétion:</label>
     <input type="number" id="cardrepHaltere10" value={repHaltere10} name="repHaltere10" className="w-75 m-auto" onChange={inputValue}/>
 
   </div>
@@ -264,9 +264,9 @@ setConnexion={setConnexion} />
   <img src={haltere11}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserHaltere11">nombre de série:</label>
+	<label for="cardserHaltere11">Nombre de série:</label>
   <input type="number" id="cardserHaltere11" value={serHaltere11} name="serHaltere11" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepHaltere11">nombre de répétion:</label>
+  <label for="cardrepHaltere11">Nombre de répétion:</label>
     <input type="number" id="cardrepHaltere11" value={repHaltere11} name="repHaltere11" className="w-75 m-auto" onChange={inputValue}/>
 
   </div>
@@ -276,9 +276,9 @@ setConnexion={setConnexion} />
   <img src={haltere12}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserHaltere12">nombre de série:</label>
+	<label for="cardserHaltere12">Nombre de série:</label>
   <input type="number" id="cardserHaltere12" value={serHaltere12} name="serHaltere12" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepHaltere12">nombre de répétion:</label>
+  <label for="cardrepHaltere12">Nombre de répétion:</label>
     <input type="number" id="cardrepHaltere12" value={repHaltere12} name="repHaltere12" className="w-75 m-auto" onChange={inputValue}/>
 
    </div>
@@ -291,9 +291,9 @@ setConnexion={setConnexion} />
   <img src={haltere13}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserHaltere13">nombre de série:</label>
+	<label for="cardserHaltere13">Nombre de série:</label>
   <input type="number" id="cardserHaltere13" value={serHaltere13} name="serHaltere13" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepHaltere13">nombre de répétion:</label>
+  <label for="cardrepHaltere13">Nombre de répétion:</label>
     <input type="number" id="cardrepHaltere13" value={repHaltere13} name="repHaltere13" className="w-75 m-auto" onChange={inputValue}/>
 
    </div>
@@ -303,9 +303,9 @@ setConnexion={setConnexion} />
   <img src={haltere14}  className="card-img-top" alt="..."/>
   <div className="card-body input_bloc_center">
 
-	<label for="cardserHaltere14">nombre de série:</label>
+	<label for="cardserHaltere14">Nombre de série:</label>
   <input type="number" id="cardserHaltere14" value={serHaltere14} name="serHaltere14" className="w-75 m-auto" onChange={inputValue}/>
-  <label for="cardrepHaltere14">nombre de répétion:</label>
+  <label for="cardrepHaltere14">Nombre de répétion:</label>
     <input type="number" id="cardrepHaltere14" value={repHaltere14} name="repHaltere14" className="w-75 m-auto" onChange={inputValue}/>
 	
     </div>
@@ -316,6 +316,7 @@ setConnexion={setConnexion} />
 
 <button type="submit" class="btn btn-primary btn-lg m-2">Enregistrer l'entrainement</button>
 <button type="button" class="btn btn-secondary btn-lg m-2"><Link to="/machine">Choisir d'autres éxercices</Link></button>
+<a href="#" className="back_start"><Link to="/machine">Retour</Link></a>
 
 </div>
 

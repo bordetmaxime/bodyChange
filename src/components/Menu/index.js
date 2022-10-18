@@ -14,7 +14,7 @@ setConnexion={setConnexion}/>
 <div className="m-auto d-flex justify-content-center menu_btn">
 
 <button className="btn btn-primary m-3"><Link to={`/training/${adminid}`}>Voir mon entrainement</Link></button>
-<button className="btn btn-primary m-3"><Link to="/start">Créer mon entrainement</Link></button>
+<button className="btn btn-primary m-3"><Link to="/machine">Créer mon entrainement</Link></button>
 
 </div>
 
