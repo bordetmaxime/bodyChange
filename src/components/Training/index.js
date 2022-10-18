@@ -62,7 +62,7 @@ console.log(training.training_img),
 
 
 </div>
-<div className="div_btn_home"><a class="btn_home" href="#"><Link to="/machine">Choisir d'autres exercices</Link></a>
+<div className="div_btn_home"><a class="btn_home " href="#"><Link to="/machine">Choisir d'autres exercices</Link></a>
 
 </div>
 </div>

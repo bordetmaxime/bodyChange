@@ -262,8 +262,8 @@ trainingSubmit,connexion, setConnexion}) => {
 <div className="d-flex justify-content-center m-5 exercice_all_button">
 
 
-<button type="submit" class="btn btn-primary btn-lg m-2">Enregistrer l'entrainement</button>
-<button type="button" class="btn btn-secondary btn-lg m-2"><Link to="/machine">Choisir d'autres éxercices</Link></button>
+<button type="submit" class="btn btn-primary btn-lg m-2 btn_responsive_size">Enregistrer l'entrainement</button>
+<button type="button" class="btn btn-secondary btn-lg m-2 btn_responsive_size"><Link to="/machine">Choisir d'autres éxercices</Link></button>
 <a href="#" className="back_start"><Link to="/machine">Retour</Link></a>
 </div>
 
